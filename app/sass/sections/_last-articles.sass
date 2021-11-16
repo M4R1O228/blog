@@ -1,0 +1,101 @@
+.last-articles
+  margin-top: 70px
+
+  &__logo
+    margin-bottom: 50px
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__item
+    max-width: 390px
+
+  &__item + .last-articles__item
+    margin-top: 50px
+
+  &__image img
+    max-width: 390px
+
+  &__author
+    color: #000
+    margin-left: 25px
+
+  &__more
+    margin: 20px auto 100px auto
+
+@media only screen and (max-width: 1199px)
+
+  .last-articles__item
+    max-width: 379px
+
+  .last-articles__image img
+    max-width: 379px
+
+  .last-articles__more
+    margin-bottom: 70px
+
+@media only screen and (max-width: 991px)
+
+  .last-articles__list
+    justify-content: center
+
+  .last-articles__item:nth-child(2),
+  .last-articles__item:nth-child(4),
+  .last-articles__item:nth-child(6)
+    margin-left: 50px
+
+
+@media only screen and (max-width: 767px)
+
+  .last-articles
+
+    &__list
+      justify-content: space-between
+
+    &__item
+      max-width: 361px
+      margin-left: 0 !important
+
+    &__image img
+      max-width: 361px
+
+    &__more
+      margin-top: 50px
+
+
+@media only screen and (max-width: 575px)
+
+    .last-articles
+
+      &__list
+        justify-content: space-around
+
+      &__more
+        margin-bottom: 70px
+
+@media only screen and (max-width: 320px)
+  .last-articles
+
+    & .little-container
+      padding: 0 10px
+
+    &__logo
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 30px
+      margin-top: 96px
+
+    &__image img
+      max-width: 300px
+
+    &__description
+      margin-top: 10px
+      margin-bottom: 10px
+
+    &__title
+      font-size: 14px
+      line-height: 17px
+      padding-bottom: 20px
+

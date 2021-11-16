@@ -1,0 +1,196 @@
+.main-news
+  color: #fff
+  & .custom-container
+   display: flex
+
+.news
+
+  &__big
+    background-image: url("../../img/main-news/news__big.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    min-width: 995px
+    min-height: 600px
+
+    &-container
+      display: flex
+      flex-direction: column
+      min-height: 600px
+
+  &__little
+    min-width: 605px
+
+  &__little_first
+    background-image: url("../../img/main-news/news__little_first.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    min-height: 300px
+
+
+  &__little_second
+    //filter: grayscale(100%)
+    background-image: url("../../img/main-news/news__little_second.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    min-height: 300px
+
+  &__description_big
+    margin-top: 50px
+    margin-left: 200px
+
+  &__description_little
+    margin-left: 30px
+    margin-top: 30px
+
+  &__little_first, .news__little_second
+    display: flex
+    flex-direction: column
+    justify-content: start
+
+  &__title
+
+    &_big
+      font-size: 24px
+      line-height: 30px
+      max-width: 500px
+      margin-left: 200px
+      margin-top: auto
+
+    &_little
+      font-size: 19px
+      line-height: 23px
+      max-width: 325px
+      margin-left: 30px
+
+      &-first
+        margin-top: auto
+
+      &-second
+        margin-top: auto
+.news__author_big
+  margin: 30px 0 50px 225px
+
+.news__author_little
+  margin: 15px 0 30px 56px
+
+@media only screen and (max-width: 1199px)
+
+  .main-news .custom-container
+    display: flex
+    padding: 0
+
+  .news
+    &__little
+      min-width: 469px
+    &__title_big
+      margin-left: 60px
+    &__big
+      min-width: 730px
+
+    &__description_big
+      margin-left: 60px
+
+    &__author_big
+      margin-top: 30px
+      margin-left: 85px
+
+@media only screen and (max-width: 991px)
+  .main-news
+    position: relative
+
+    &__slider-counter
+      position: absolute
+      z-index: 100
+      color: #000
+      font-family: ProstoOne
+      font-size: 14px
+      line-height: 17px
+      letter-spacing: 0.01em
+      top: 515px
+      right: 146px
+
+
+
+    .news__little_first
+    background-position: center
+
+  .slick-btn
+    position: absolute
+    top: 515px
+    height: 10px
+    width: 30px
+
+  .slick-next
+    right: 220px
+
+  .slick-prev
+    right: 270px
+
+
+
+
+@media only screen and (max-width: 767px)
+
+
+@media only screen and (max-width: 575px)
+  .news
+
+    &__big
+      min-width: 570px
+
+
+@media only screen and (max-width: 320px)
+  .news
+
+    &__big
+      min-width: 320px
+      min-height: 500px
+
+    &__big-container
+      justify-content: end
+      min-height: 500px
+      margin-left: 10px
+
+    &__little
+      min-width: 320px
+
+    &__title
+
+      &_big
+        margin-top: 10px
+        margin-left: 0
+        font-size: 14px
+        line-height: 17px
+
+      &_little
+        margin-top: 10px
+        font-size: 14px
+        line-height: 17px
+        margin-left: 0
+
+    &__little_first, .news__little_second
+      min-height: 250px
+      padding-left: 10px
+      justify-content: end
+
+
+    &__description_big
+      margin-bottom: 0
+      margin-left: 0
+
+    &__description_little
+      margin-bottom: 0
+      margin-left: 0
+
+    &__author_big
+      margin-top: 50px
+      margin-bottom: 60px
+      margin-left: 25px
+
+    &__author_little
+      margin-left: 25px
+
+

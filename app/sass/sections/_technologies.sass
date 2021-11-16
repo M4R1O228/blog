@@ -1,0 +1,164 @@
+.technologies
+
+  &__logo
+    margin-right: 50px
+
+  &__header
+    display: flex
+    align-items: end
+    margin-bottom: 50px
+
+  &__list
+    display: flex
+    justify-content: space-between
+
+  &__image
+
+    & img
+      max-width: 390px
+
+  &__author
+    margin-left: 25px
+    color: #000
+
+  &__more
+    margin: 70px auto 100px auto
+
+  &__items:nth-child(1), .technologies__items:nth-child(3)
+    max-width: 390px
+    display: flex
+    flex-wrap: wrap
+
+  &__item:nth-child(2), .technologies__item:nth-child(1)
+    height: 698px
+
+
+@media only screen and (max-width: 1199px)
+
+  .technologies
+
+    &__logo
+      margin-right: 25px
+
+    &__items
+      max-width: 379px !important
+
+    &__image img
+      max-width: 379px
+
+    &__item:nth-child(2), .technologies__item:nth-child(1)
+      height: 679px
+
+    &__more
+      margin-bottom: 70px
+
+
+
+@media only screen and (max-width: 991px)
+
+  .technologies
+    &__items
+      max-width: 310px !important
+
+    &__image img
+      max-width: 310px
+
+    &__item:nth-child(2), .technologies__item:nth-child(1)
+      height: 555px
+
+    &__more
+      margin-bottom: 50px
+      margin-top: 70px
+
+
+@media only screen and (max-width: 767px)
+
+  .technologies
+
+    &__header
+      flex-wrap: wrap
+
+      & .tags
+        order: 2
+        margin: 15px auto 0
+
+    &__items
+      max-width: 235px !important
+
+    &__image img
+      max-width: 235px
+
+    &__item:nth-child(2), .technologies__item:nth-child(1)
+      height: 421px
+
+    &__description
+      margin-bottom: 5px
+      margin-top: 15px
+
+    &__title
+      font-size: 14px
+      line-height: 20px
+      padding-bottom: 3px
+
+
+@media only screen and (max-width: 575px)
+
+  .technologies
+
+    &__list
+      flex-wrap: wrap
+      justify-content: space-around
+
+    &__image img
+      max-width: 390px !important
+
+    &__items
+      max-width: 390px !important
+
+    &__items + &__items
+      margin-top: 50px
+
+    &__item:nth-child(2)
+      margin-top: 50px
+
+    &__item:nth-child(2), .technologies__item:nth-child(1)
+      height: auto
+
+    &__description
+      margin-bottom: 5px
+      margin-top: 15px
+
+    &__title
+      font-size: 18px
+      line-height: 22px
+
+    &__more
+      margin-top: 50px
+
+@media only screen and (max-width: 320px)
+
+  .technologies
+
+    &__header
+      margin-bottom: 30px
+
+    & .little-container
+      padding: 0 10px
+
+    &__logo
+      font-size: 18px
+      line-height: 22px
+
+    &__items
+      max-width: 300px !important
+
+    &__image img
+      max-width: 300px !important
+
+    &__description
+      margin-bottom: 10px
+      margin-top: 10px
+
+    &__title
+      font-size: 14px
+      line-height: 17px

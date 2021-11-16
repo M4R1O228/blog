@@ -1,0 +1,139 @@
+.custom-container
+	max-width: 1600px
+	margin: 0 auto
+	padding: 0 15px
+	font-family: 'ProstoOne'
+
+.little-container
+	max-width: 1230px
+	margin: 0 auto
+	padding: 0 15px
+	font-family: 'ProstoOne'
+
+.section-title
+	letter-spacing: 0.01em
+	font-size: 32px
+	line-height: 40px
+	font-family: 'ProstoOne'
+
+.title
+	font-size: 18px
+	line-height: 22px
+	letter-spacing: 0.01em
+	max-width: 380px
+	padding-bottom: 15px
+	word-wrap: break-word
+	overflow: hidden
+	max-height: 110px
+
+.name
+	margin-bottom: 17px
+	margin-top: 20px
+	font-size: 18px
+	line-height: 22px
+	text-align: center
+	letter-spacing: 0.01em
+	max-width: 390px
+
+.more
+	max-width: 40px
+	text-decoration: underline
+
+.date
+	font-family: 'ProstoOne'
+	margin-left: 30px
+	color: #ADADAD
+
+.description
+	font-size: 12px
+	line-height: 15px
+	color: #FD561F
+	letter-spacing: 0.01em
+	margin-bottom: 15px
+	margin-top: 20px
+
+.tag
+	font-size: 16px
+	line-height: 20px
+	color: #FD561F
+	letter-spacing: 0.01em
+
+.tags
+
+	&__list
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+
+		&-item
+			//display: inline-block
+
+		&-item + .tags__list-item
+			margin-left: 30px
+
+.author
+	color: #FFF
+	font-family: 'Garamond Pro'
+	font-size: 14px
+	line-height: 17px
+	letter-spacing: 0.01em
+	position: relative
+
+.author::before
+	content: ''
+	width: 5px
+	height: 5px
+	background-color: #2FC41A
+	position: absolute
+	bottom: 5px
+	left: -25px
+	right: 0
+
+.author::after
+	content: ''
+	width: 5px
+	height: 5px
+	background-color: #2FC41A
+	position: absolute
+	bottom: 5px
+	left: -15px
+	right: 0
+
+.section-link
+	margin-left: auto
+	& a
+		font-family: 'ProstoOne'
+		font-size: 14px
+		line-height: 17px
+		letter-spacing: 0.01em
+		text-decoration: underline
+		color: #000
+
+
+.button
+	display: inline-block
+	line-height: 1
+	transition: all 0.25s
+	min-width: min-content
+	white-space: nowrap
+	transition: all .25s ease-in-out
+	&:focus
+		outline: none
+	&:hover
+		text-decoration: none
+	&_primary
+		&:hover
+
+		&:active
+
+	&_secondary
+		&:hover
+
+		&:active
+
+	&:disabled, 
+	&[disabled]
+		color: white !important
+		border-color: #d7d7d7 !important
+		background-color: #d7d7d7 !important
+		box-shadow: none

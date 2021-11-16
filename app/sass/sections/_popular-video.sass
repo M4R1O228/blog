@@ -1,0 +1,173 @@
+.popular-video
+  color: #fff
+  background-color: #1461FB
+
+
+  &__header
+    display: flex
+    align-items: end
+
+  &__logo
+    padding-top: 48px
+
+  &__title
+    padding-top: 60px
+
+  &__link
+    padding-top: 67px
+    margin-right: 200px
+
+  &__list
+    display: flex
+    justify-content: center
+    margin-top: 60px
+    padding-bottom: 70px
+
+  &__item + .popular-video__item
+    margin-left: 15px
+
+  &__image
+    border-radius: 50%
+    position: relative
+
+  &__image::before
+    content: ''
+    width: 85px
+    height: 85px
+    background-image: url("../../img/others/others-player.svg")
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+  &__name
+    margin-bottom: 17px
+    margin-top: 20px
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    letter-spacing: 0.01em
+    max-width: 390px
+
+  &__data
+    display: flex
+    justify-content: center
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.01em
+
+  &__views
+    position: relative
+    margin-left: 53px
+
+  &__views::before
+    content: ''
+    width: 17px
+    height: 17px
+    position: absolute
+    left: -22px
+    top: -1px
+    background-image: url("../../img/others/others-views.svg")
+
+  &__comments
+    position: relative
+    margin-left: 49px
+
+  &__comments::before
+    content: ''
+    width: 13px
+    height: 13px
+    position: absolute
+    left: -22px
+    top: 1px
+    background-image: url("../../img/others/others-comments.svg")
+
+@media only screen and (max-width: 1199px)
+
+  .popular-video__link
+    margin-right: 35px
+
+  .popular-video__image img
+    max-width: 350px
+
+  .popular-video__item
+    max-width: 350px
+
+@media only screen and (max-width: 991px)
+
+  .popular-video__image img
+    max-width: 310px
+
+  .popular-video__item
+    max-width: 310px
+
+
+@media only screen and (max-width: 767px)
+
+  .popular-video
+
+    &__title
+      margin-left: 15px
+    &__logo
+      display: none
+
+    &__list
+      justify-content: center
+
+    &__image img
+      max-width: 710px
+      margin: 0 auto
+
+    &__item
+      max-width: 767px
+
+    &__name
+      margin-left: auto
+      margin-right: auto
+
+    &__item + .popular-video__item
+      margin-left: 0 !important
+
+
+@media only screen and (max-width: 575px)
+
+  .popular-video
+
+    &__title
+      padding-top: 20px
+
+    &__link
+      padding-top: 0
+
+    &__list
+      padding-bottom: 40px
+
+@media only screen and (max-width: 320px)
+  .popular-video
+
+    & .custom-container
+      padding: 0 10px
+
+    &__title
+      font-size: 18px
+      line-height: 22px
+      margin-left: 0
+      padding-top: 50px
+
+    &__name
+      font-size: 14px
+      line-height: 17px
+
+    &__header
+      position: relative
+
+    &__link
+      position: absolute
+      top: 500px
+      right: 67px
+
+    &__image img
+      max-width: 250px
+
+    &__list
+      padding-bottom: 115px

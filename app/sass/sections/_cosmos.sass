@@ -1,0 +1,113 @@
+.cosmos
+  margin-top: 100px
+
+  &__logo
+    margin-right: 50px
+
+  &__image img
+    max-width: 390px
+
+  &__header
+    display: flex
+    align-items: end
+    margin-bottom: 50px
+
+  &__list
+    display: flex
+    justify-content: space-between
+
+  &__author
+    margin-left: 25px
+    color: #000
+
+  &__more
+    margin: 70px auto 100px auto
+
+
+@media only screen and (max-width: 1199px)
+
+  .cosmos
+    margin-top: 70px
+
+    &__header
+      margin-bottom: 40px
+
+    &__image img
+      max-width: 379px
+
+    &__item
+      max-width: 379px
+
+    &__more
+      margin-bottom: 70px
+
+@media only screen and (max-width: 991px)
+
+  .cosmos__list
+    flex-wrap: wrap
+
+  .cosmos__logo
+    margin-right: 35px
+
+  .cosmos__item
+    max-width: 310px
+
+  .cosmos__image img
+    max-width: 310px
+
+  .cosmos__more
+    margin-top: 50px
+
+  .tags__list-item+.tags__list-item
+    margin-left: 20px
+
+@media only screen and (max-width: 767px)
+
+  .cosmos
+
+    &__header
+      flex-wrap: wrap
+
+    & .tags
+      order: 2
+      margin: 15px auto 0
+
+    &__list
+      justify-content: space-around
+
+    &__item
+      max-width: 390px
+
+      & + .cosmos__item
+        margin-top: 50px
+
+    &__image img
+      max-width: 390px
+
+@media only screen and (max-width: 575px)
+
+
+@media only screen and (max-width: 320px)
+
+  .cosmos
+
+    & .little-container
+      padding: 0 10px
+
+    &__logo
+      font-size: 18px
+      line-height: 22px
+
+    &__image img
+      max-width: 300px
+
+    &__item
+      max-width: 300px
+
+    &__description
+      margin-top: 10px
+      margin-bottom: 10px
+
+    &__title
+      font-size: 14px
+      line-height: 17px

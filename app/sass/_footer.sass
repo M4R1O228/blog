@@ -1,0 +1,58 @@
+.footer
+	margin-top: 100px
+	padding-bottom: 70px
+	& .little-container
+		border-top: 1px solid
+
+	&__logo
+		margin: 60px auto 60px auto
+		width: 70px
+
+	&__logo_second
+		display: block
+		margin-top: -9px
+
+	&__menu
+		margin-bottom: 50px
+
+		&-list
+			display: flex
+			justify-content: center
+
+		&-item a
+			font-size: 12px
+			line-height: 15px
+			letter-spacing: 0.01em
+			color: #000
+
+		&-item + .footer__menu-item
+			margin-left: 40px
+
+	&__social
+		display: flex
+		justify-content: center
+
+	&__image + .footer__image
+		margin-left: 40px
+
+
+@media only screen and (max-width: 1199px)
+	.footer
+
+@media only screen and (max-width: 991px)
+	.footer
+	
+@media only screen and (max-width: 767px)
+	.footer
+		margin-top: 80px
+		padding-bottom: 60px
+
+		&__logo
+			margin: 45px auto 45px auto
+
+		&__menu-list
+			flex-wrap: wrap
+
+@media only screen and (max-width: 575px)
+	.footer
+		margin-top: 60px

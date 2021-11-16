@@ -1,0 +1,150 @@
+.tesla
+  margin-top: 100px
+
+  &__logo
+    margin-right: 50px
+  &__header
+    display: flex
+    align-items: end
+    margin-bottom: 50px
+
+  &__list
+    display: flex
+    justify-content: space-between
+
+  &__item:nth-child(1) img
+    max-width: 795px
+    margin-right: 15px
+
+  &__item:nth-child(2) img
+    max-width: 390px
+
+  &__title_big
+    max-width: 750px
+
+  &__author
+    margin-left: 25px
+    color: #000
+
+  &__more
+    margin: 70px auto 100px auto
+
+
+@media only screen and (max-width: 1199px)
+
+  .tesla
+    margin-top: 70px
+
+    &__item:nth-child(1) img,
+    &__item:nth-child(1)
+      max-width: 775px
+
+    &__item:nth-child(2) img,
+    &__item:nth-child(2)
+      max-width: 379px
+
+    &__more
+      margin-bottom: 70px
+
+@media only screen and (max-width: 991px)
+
+  .tesla
+    margin-top: 50px
+
+    &__logo
+      margin-right: 35px
+
+    &__item:nth-child(1) img,
+    &__item:nth-child(1)
+      max-width: 636px
+
+    &__item:nth-child(2) img,
+    &__item:nth-child(2)
+      max-width: 310px
+
+    &__more
+      margin-bottom: 50px
+      margin-top: 50px
+
+
+@media only screen and (max-width: 767px)
+
+  .tesla
+
+    &__header
+      flex-wrap: wrap
+
+    & .tags
+      order: 2
+      margin: 15px auto 0
+
+    &__list
+      flex-wrap: wrap
+      justify-content: space-around
+
+    &__item:nth-child(1) img
+      margin-right: 0 !important
+
+    &__item:nth-child(2)
+      margin-top: 25px
+
+
+
+@media only screen and (max-width: 575px)
+
+  .tesla
+    margin-top: 45px
+
+    &__item:nth-child(1) img,
+    &__item:nth-child(1)
+      max-width: 525px
+
+    &__item:nth-child(2) img,
+    &__item:nth-child(2)
+      max-width: 390px
+
+    &__more
+      margin-bottom: 70px
+      margin-top: 50px
+
+
+@media only screen and (max-width: 320px)
+
+  .tesla
+
+    &__header
+      margin-bottom: 30px
+
+    & .little-container
+      padding: 0 10px
+
+    &__logo
+      font-size: 18px
+      line-height: 22px
+    &__item
+      max-width: 300px
+
+    &__item:nth-child(1) img
+      height: 385px
+      width: 300px
+      object-fit: cover
+
+    &__item:nth-child(2) img
+      max-width: 300px
+
+    &__description
+      margin-top: 10px
+      margin-bottom: 10px
+
+    &__title_big,
+    &__title_little
+      font-size: 14px
+      line-height: 17px
+
+  .tags__list-tag
+    font-size: 12px
+    line-height: 15px
+
+  .tags__list-item + .tags__list-item
+    margin-left: 10px
+

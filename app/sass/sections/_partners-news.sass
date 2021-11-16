@@ -1,0 +1,153 @@
+.partners-news
+  margin-top: 100px
+  &__logo
+    margin-bottom: 50px
+
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    display: flex
+
+  &__item:nth-child(1), .partners-news__item:nth-child(2)
+    margin-bottom: 50px
+
+  &__information
+    margin-left: 15px
+
+  &__image img
+      max-width: 250px
+
+  &__title
+    font-size: 18px
+    line-height: 22px
+    max-width: 315px
+    padding-bottom: 44px
+    word-wrap: break-word
+    overflow: hidden
+    max-height: 110px
+
+  &__author
+    margin-left: 25px
+    color: #000
+
+  &__more
+    margin: 70px auto 100px auto
+
+  &__description
+    color: #2FC31A
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.01em
+    margin-bottom: 10px
+    position: relative
+    margin-left: 29px
+
+  &__item:nth-child(1) .partners-news__description::before
+    content: ''
+    position: absolute
+    width: 14px
+    height: 14px
+    top: -1px
+    left: -27px
+    background-image: url("../../img/partners-news/partners-news-android.svg")
+
+  &__description::before
+    content: ''
+    position: absolute
+    width: 13px
+    height: 13px
+    top: -1px
+    left: -27px
+    background-image: url("../../img/partners-news/partners-news-circle.svg")
+
+
+
+
+
+
+@media only screen and (max-width: 1199px)
+
+
+@media only screen and (max-width: 991px)
+
+  .partners-news
+
+    &__list
+      justify-content: center
+
+    &__item
+      flex-direction: column
+      max-width: 315px
+
+    &__title
+      padding-bottom: 35px
+
+
+    &__item:nth-child(2), .partners-news__item:nth-child(4)
+      margin-left: 50px
+
+    &__information
+      margin-left: 0
+      margin-top: 20px
+
+    &__image img
+      width: 315px
+      max-width: 315px
+
+    &__item:nth-child(1), .partners-news__item:nth-child(2)
+      margin-bottom: 30px
+
+
+
+@media only screen and (max-width: 767px)
+
+  .partners-news
+    margin-top: 70px
+
+
+
+@media only screen and (max-width: 575px)
+
+  .partners-news
+
+    &__item
+      max-width: 545px
+
+    &__image img
+      max-width: 545px
+      width: 545px
+
+    &__item:nth-child(2), .partners-news__item:nth-child(4)
+      margin-left: 0
+
+    &__item + &__item
+      margin-top: 30px
+
+    &__item:nth-child(1), .partners-news__item:nth-child(2)
+      margin-bottom: 0
+
+
+@media only screen and (max-width: 320px)
+
+  .partners-news
+    &__logo
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 30px
+
+    &__information
+      margin-top: 10px
+
+    &__image img
+      max-width: 300px
+      width: 300px
+      height: 150px
+      object-fit: cover
+
+    &__title
+      font-size: 14px
+      line-height: 124.35%
+      padding-bottom: 20px
