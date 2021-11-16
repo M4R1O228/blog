@@ -12,7 +12,9 @@
   &__item
     max-width: 390px
 
-  &__item + .last-articles__item
+  &__item:nth-child(4),
+  &__item:nth-child(5),
+  &__item:nth-child(6)
     margin-top: 50px
 
   &__image img
@@ -23,7 +25,7 @@
     margin-left: 25px
 
   &__more
-    margin: 20px auto 100px auto
+    margin: 70px auto 100px auto
 
 @media only screen and (max-width: 1199px)
 
@@ -38,13 +40,18 @@
 
 @media only screen and (max-width: 991px)
 
-  .last-articles__list
-    justify-content: center
+  .last-articles
 
-  .last-articles__item:nth-child(2),
-  .last-articles__item:nth-child(4),
-  .last-articles__item:nth-child(6)
-    margin-left: 50px
+    &__list
+      justify-content: center
+
+    &__item:nth-child(2),
+    &__item:nth-child(4),
+    &__item:nth-child(6)
+      margin-left: 50px
+
+    &__item:nth-child(3)
+      margin-top: 50px
 
 
 @media only screen and (max-width: 767px)
@@ -74,6 +81,9 @@
 
       &__more
         margin-bottom: 70px
+
+      &__item:nth-child(2)
+        margin-top: 50px
 
 @media only screen and (max-width: 320px)
   .last-articles

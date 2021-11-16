@@ -15,9 +15,16 @@
 	&__menu
 		margin-bottom: 50px
 
+		&-items
+			display: flex
+			justify-content: center
+
 		&-list
 			display: flex
 			justify-content: center
+
+		&-list:nth-child(2)
+			margin-left: 40px
 
 		&-item a
 			font-size: 12px
@@ -39,20 +46,49 @@
 @media only screen and (max-width: 1199px)
 	.footer
 
+		& .little-container
+			max-width: 1180px
 @media only screen and (max-width: 991px)
 	.footer
+		& .little-container
+			max-width: 971px
 	
 @media only screen and (max-width: 767px)
 	.footer
 		margin-top: 80px
 		padding-bottom: 60px
 
+		& .little-container
+			max-width: 747px
+
 		&__logo
 			margin: 45px auto 45px auto
 
-		&__menu-list
-			flex-wrap: wrap
+		&__menu
+
+			&-items
+				justify-content: space-around
+
+			&-list
+				flex-direction: column
+			&-list:nth-child(2)
+				justify-content: start
+
+			&-item + .footer__menu-item
+				margin-left: 0
+
+
 
 @media only screen and (max-width: 575px)
 	.footer
 		margin-top: 60px
+		& .little-container
+			max-width: 555px
+
+@media only screen and (max-width: 320px)
+	.footer
+		& .little-container
+			max-width: 300px
+
+		&__logo
+			margin: 20px auto 30px auto
