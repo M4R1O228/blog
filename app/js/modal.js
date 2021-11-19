@@ -1,6 +1,6 @@
 const modalLinks = document.querySelectorAll('.link-modal');
 const body = document.querySelector('body');
-const modalCloseIcon = document.querySelectorAll('.modal-window__close');
+const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
 
@@ -18,6 +18,7 @@ if (modalLinks.length > 0) {
     }
 }
 
+const modalCloseIcon = document.querySelectorAll('.modal-window__close');
 if (modalCloseIcon.length > 0) {
     for (let i = 0; i < modalCloseIcon.length; i++) {
         const element = modalCloseIcon[i];
@@ -31,9 +32,10 @@ if (modalCloseIcon.length > 0) {
 function modalOpen(currentModal) {
     if (currentModal && unlock) {
         const modalActive = document.querySelector('.modal-window.open');
-        console.log(modalActive)
         if (modalActive) {
-            modalClose(modalActive);
+            modalClose(modalActive, false);
+        } else {
+            bodyLock();
         }
         document.querySelector('.login__list').classList.remove('active');
         document.querySelector('.login__button').classList.remove('active');
@@ -46,10 +48,38 @@ function modalOpen(currentModal) {
     }
 }
 
-function modalClose(modalActive, ) {
+function modalClose(modalActive, doUnlock = true) {
     if (unlock) {
         modalActive.classList.remove('open');
+        if (doUnlock) {
+            bodyUnlock();
+        }
     }
+}
+
+function bodyLock() {
+    const lockPaddingValue = window.innerWidth - document.querySelector('.header').offsetWidth + 'px';
+
+
+    body.style.paddingRight  = lockPaddingValue;
+    body.classList.add('lock');
+
+    unlock = false;
+    setTimeout(() => {
+        unlock = true
+    }, timeout);
+}
+
+function bodyUnlock() {
+    setTimeout(() => {
+        body.style.paddingRight = '0px';
+        body.classList.remove('lock');
+    }, timeout);
+
+    unlock = false;
+    setTimeout(() => {
+        unlock = true;
+    }, timeout);
 }
 
 
