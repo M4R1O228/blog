@@ -109,7 +109,7 @@
       top: 0
       right: -37px
       transform: translateX(300%)
-      transition: transform 0.5s
+      transition: all 0.5s
       padding-left: 43px
       width: 300px
       height: 100vh
@@ -124,12 +124,15 @@
 
     &__list.active
       transform: translateX(0)
+      box-shadow: 0 0 0 9999px rgba(0,0,0, 0.6)
 
     &__button.active
       top: 63px
       right: 7px
       position: fixed
       transition: rotate 1s
+
+
 
       & span::after
         transform: rotate(45deg)
