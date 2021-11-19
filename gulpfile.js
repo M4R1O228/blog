@@ -68,7 +68,6 @@ function watchFiles(done) {
   	done();
 }
 
-
 function removeDist(done) {
 	del.sync('dist');
 	done();

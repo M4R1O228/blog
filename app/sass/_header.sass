@@ -36,7 +36,7 @@
 
 .login
   margin-left: auto
-  margin-right: 200px
+  margin-right: 90px
 
   &__list
     padding-top: 74px
@@ -52,6 +52,52 @@
         font-size: 14px
         line-height: 17px
         letter-spacing: 0.01em
+
+.modal-window
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.8)
+  top: 0
+  left: 0
+  opacity: 0
+  visibility: hidden
+  overflow-y: auto
+  overflow-x: hidden
+  transition: all 0.8s ease 0s
+  z-index: 1
+
+  &__body
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 30px 10px
+
+  &__content
+    background-color: #fff
+    color: #000
+    max-width: 800px
+    padding: 30px
+    position: relative
+    opacity: 0
+    transform: translate(0px, -200px)
+    transition: all 0.8s ease 0s
+
+  &__close
+    position: absolute
+    top: 10px
+    right: 10px
+    color: #000
+
+  &.open
+
+    opacity: 1
+    visibility: visible
+
+  &.open .modal-window__content
+    transform: translate(0px, 0%)
+    opacity: 1
 
 @media only screen and (max-width: 1199px)
   .header
@@ -126,14 +172,11 @@
       transform: translateX(0)
       box-shadow: 0 0 0 9999px rgba(0,0,0, 0.6)
 
-
     &__button.active
       top: 63px
       right: 7px
       position: fixed
       transition: rotate 1s
-
-
 
       & span::after
         transform: rotate(45deg)
