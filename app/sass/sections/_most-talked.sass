@@ -1,0 +1,152 @@
+.most-talked
+  margin-top: 70px
+
+  &-slider__counter
+    display: none
+
+  &__header
+    margin-bottom: 50px
+
+  &__item:nth-child(1)
+    max-width: 795px
+
+  &__image:nth-child(1) img
+    max-width: 795px
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__item
+    max-width: 390px
+    margin-bottom: 50px
+
+  &__image img
+    max-width: 390px
+    min-height: 500px
+
+  &__author
+    color: #000
+    margin-left: 25px
+
+@media only screen and (max-width: 1199px)
+  .most-talked
+
+    &__item:nth-child(1) img
+      max-width: 774px !important
+
+    &__image img
+      max-width: 379px !important
+      min-height: 500px
+
+@media only screen and (max-width: 991px)
+  .most-talked
+
+    &__list
+      justify-content: center
+
+    &__item:nth-child(3),
+    &__item:nth-child(5)
+      margin-left: 15px
+
+    &__item:nth-child(1)
+      max-width: 795px
+
+    &__image:nth-child(1) img
+      max-width: 795px !important
+
+    &__item
+      max-width: 390px
+
+    &__image img
+      max-width: 390px !important
+
+@media only screen and (max-width: 767px)
+  .most-talked
+    &__item:nth-child(1)
+      max-width: 737px
+
+    &__image:nth-child(1) img
+      max-width: 737px !important
+
+@media only screen and (max-width: 575px)
+  .most-talked
+    position: relative
+    & .little-container
+      padding: 0 !important
+      max-width: 555px
+      border-bottom: 1px solid
+
+    & .little-container
+      padding: 0 10px
+
+    &__image:nth-child(1) img
+      max-width: 555px !important
+      object-fit: cover
+
+    &__item:nth-child(1)
+      max-width: 555px
+
+    &__item
+      margin-left: 0 !important
+      max-width: 555px
+      display: flex !important
+      align-items: center
+      flex-direction: column
+      margin-bottom: 30px
+
+    &-slider__counter
+      top: 780px
+      display: initial
+      left: 154px
+
+    & .slick-btn
+      top: 687px
+
+    & .slick-prev
+      left: 17px
+
+    & .slick-next
+      left: 70px
+
+@media only screen and (max-width: 320px)
+  .most-talked
+
+    & .little-container
+      max-width: 300px
+
+    &__category
+      margin-bottom: 10px
+      margin-top: 10px
+
+    &__title
+      font-size: 14px
+      line-height: 17px
+      padding-bottom: 0
+      margin-bottom: 20px
+
+    &__item
+      max-width: 300px
+
+    &__image img
+      min-height: 385px
+
+    &__image:nth-child(1) img
+      max-width: 300px !important
+
+    &__item:nth-child(1)
+      max-width: 300px !important
+
+    & .slick-btn
+      top: 550px
+
+    & .slick-prev
+      left: 4px
+
+    & .slick-next
+      left: 57px
+
+    &-slider__counter
+      top: 620px
+      left: 141px

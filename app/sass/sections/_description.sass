@@ -1,0 +1,284 @@
+.description
+  font-family: "Garamond Pro"
+  font-size: 23px
+  line-height: 124.35%
+
+  & .article-container
+    position: relative
+
+  &-interesting
+    margin-top: 70px
+    margin-bottom: 70px
+    font-weight: 600
+    font-size: 23px
+    line-height: 28px
+    height: 65px
+    border-left: 2px solid
+    padding-left: 20px
+    display: flex
+    align-items: center
+
+  &__title
+    font-weight: 600
+    font-size: 31px
+    line-height: 37px
+    margin-top: 70px
+    margin-bottom: 15px
+
+  &__image
+    margin-top: 50px
+    margin-bottom: 50px
+
+    & img
+      max-width: 800px
+      max-height: 500px
+
+    &-under
+      margin-top: 10px
+      font-weight: 600
+      font-size: 23px
+      line-height: 124.35%
+
+      & span
+        display: block
+        color: #979797
+        font-size: 18px
+        font-weight: normal
+
+  &__image_little
+    display: flex
+    justify-content: space-between
+
+    & img
+      max-width: 390px
+      max-height: 400px
+
+  &__phrase
+    margin: 70px 0 70px 0
+    &-information
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    &-text
+      font-weight: 600
+      margin-bottom: 30px
+      max-width: 630px
+      text-align: center
+
+  &__text
+    margin-bottom: 15px
+
+    & span
+      font-weight: 600
+
+  &__hr
+    width: 150px
+    height: 2px !important
+    color: #000
+    &_top
+      margin: 0 auto 30px auto
+
+    &_bottom
+      margin: 30px auto 0 auto
+
+  &__question
+    font-family: ProstoOne
+    padding: 40px 0 40px 0
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: 1px solid
+    border-top: 1px solid
+
+    &-link
+      color: #FD561F
+      text-decoration: underline
+
+  &__list-items,
+  &__list-item
+    list-style-type: disc
+
+  &__list
+    margin-left: 26px
+    margin-bottom: 15px
+
+  &__category
+    color: #FD561F
+    font-family: ProstoOne
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.01em
+    text-decoration: underline
+    margin-top: 70px
+
+    &-items
+      display: flex
+
+    &-item
+      margin-right: 30px
+      margin-bottom: 15px
+
+  &-share
+    font-family: ProstoOne
+    color: #848484
+    font-size: 13px
+    line-height: 16px
+
+    &-top
+      position: absolute
+      top: -6px
+      left: -250px
+
+      & .description-share__image
+        margin-right: 50px
+        margin-bottom: 30px
+        & img
+          max-width: 21px
+
+      & .description-share__social
+        max-width: 150px
+        flex-wrap: wrap
+
+    &__title
+      margin-bottom: 15px
+
+    &__social
+      display: flex
+
+    &__image:nth-child(2)
+      margin-left: 5px
+
+    &__save img
+      margin-right: 25px
+
+  &-share-bottom
+    display: none
+
+    & .description-share__title
+      margin-top: 50px
+
+    & .description-share__image
+      margin-right: 30px
+
+    & .description-share__social
+      margin-bottom: 30px
+
+
+@media only screen and (max-width: 1199px)
+
+  .description
+
+    &-share-top
+      display: none
+
+    &-share-bottom
+      display: block
+
+@media only screen and  (max-width: 991px)
+
+@media only screen and (max-width: 767px)
+
+  .description
+    font-size: 16px
+
+    & .article-container
+      padding: 0
+
+    &-interesting,
+    &__text,
+    &__title,
+    &__category,
+    &__question,
+    &__phrase,
+    &-share
+      margin-left: 10px
+
+    &__image-under
+      padding-left: 10px
+
+    &__image img
+      max-width: 767px
+
+    &__image_little img
+      max-width: 378px
+
+    &__question
+      max-width: 747px
+
+    &__list
+      margin-left: 37px
+
+@media only screen and (max-width: 575px)
+  .description
+
+    &__image img
+      max-width: 575px
+
+    &__image_little img
+      max-width: 280px
+
+    &__question
+      max-width: 555px
+
+    &__question-text
+      max-width: 470px
+
+    &__category
+      margin-top: 50px
+
+    &-interesting
+      margin-bottom: 50px
+      margin-top: 30px
+
+    &__image
+      margin-top: 30px
+      margin-bottom: 30px
+
+    &__phrase
+      margin-top: 50px
+      margin-bottom: 50px
+
+    &__title
+      margin-top: 50px
+
+@media only screen and (max-width: 320px)
+
+  .description
+
+    &-interesting__text
+      font-size: 16px
+      line-height: 19px
+
+    &__title
+      font-size: 18px
+      line-height: 22px
+
+    &__image-under
+      font-size: 16px
+      & span
+        font-size: 14px
+
+    &__image img
+      max-width: 320px
+
+    &__image_little
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+
+    &__image_little img
+      max-width: 195px
+      min-height: 200px
+      max-height: 200px
+      margin-bottom: 10px
+
+    &__category-items
+      flex-wrap: wrap
+
+    &__question
+      max-width: 300px
+      padding: 20px 0 20px 0
+
+    &__question-text
+      max-width: 245px

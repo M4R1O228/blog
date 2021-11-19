@@ -1,0 +1,142 @@
+.popular-tags
+
+  &__list
+    display: flex
+    justify-content: center
+
+  &__item
+    display: flex !important
+    flex-direction: column
+    align-items: center
+
+  &__image
+    border-radius: 50%
+
+    &-circle
+      background-color: #000
+      width: 390px
+      height: 390px
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &__category
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+
+  &__all-tags
+    max-width: 100px
+    margin: 70px auto 100px auto
+
+@media only screen and (max-width: 1199px)
+  .popular-tags
+
+    &__link
+      margin-right: 35px
+
+    &__image-circle
+      width: 375px
+      height: 375px
+
+    &__image img
+      max-width: 375px
+
+    &__item
+      max-width: 390px
+
+@media only screen and (max-width: 991px)
+  .popular-tags
+
+    &__image img
+     max-width: 310px
+
+    &__image-circle
+     width: 310px
+     height: 310px
+
+    &__image-circle img
+      width: 225px
+
+    &__item
+      max-width: 321px
+
+@media only screen and (max-width: 767px)
+  .popular-tags
+
+    &__title
+      margin-left: 15px
+    &__logo
+      display: none
+
+    &__list
+      justify-content: center
+
+    &__image img
+      max-width: 235px
+
+    &__image-circle img
+      max-width: 165px
+
+    &__image-circle
+      width: 235px
+      height: 235px
+
+    &__item
+      max-width: 250px
+
+@media only screen and (max-width: 575px)
+  .popular-tags
+
+    &__second
+      margin-top: 90px
+
+    & .little-container
+      padding: 0 10px
+
+    &__image img
+      max-width: 265px
+
+    &__image-circle img
+      max-width: 165px
+
+    &__image-circle
+      width: 265px
+      height: 265px
+
+    &__item
+      max-width: 278px
+
+@media only screen and (max-width: 320px)
+  .popular-tags
+
+    &__image img
+      max-width: 250px
+
+    &__image-circle
+      width: 250px
+      height: 250px
+
+      & img
+        max-width: 175px
+
+    &__item
+      max-width: 300px
+
+    &__all-tags
+      margin-top: 20px
+      margin-bottom: 70px
+      font-size: 12px
+      line-height: 15px
+      max-width: 68px
+
+    &__title
+      font-size: 18px
+      line-height: 22px
+      margin-left: 0
+      margin-bottom: 30px
+
+    &__category
+      font-size: 18px
+      line-height: 22px
+

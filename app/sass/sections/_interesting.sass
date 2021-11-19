@@ -1,0 +1,169 @@
+.interesting
+  margin-top: 50px
+  background-color: #030301
+  color: #fff
+
+  &__item
+    min-height: 600px
+    position: relative
+
+  &__information
+    position: absolute
+    top: 120px
+    margin-left: 180px
+
+  &__image img
+    margin-left: 600px
+
+  &__title
+    font-size: 24px
+    line-height: 30px
+    max-width: 500px
+    margin-bottom: 20px
+    padding-bottom: 0
+
+  &__category
+    display: inline-block
+    font-size: 14px
+    line-height: 17px
+    margin-top: 0
+
+  &__date
+    display: inline-block
+    margin-left: 50px
+
+  &__author
+    margin-left: 25px
+    margin-bottom: 60px
+
+  &__text
+    max-width: 550px
+    font-family: "Garamond Pro"
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.01em
+    margin-bottom: 25px
+    mask-image: linear-gradient(to top, rgba(3, 3, 1, 0) 0%, rgba(3, 3, 1, 0.24) 17.28%, rgba(3, 3, 1, 0.56) 28.86%, rgba(3, 3, 1, 0.88) 43.1%, rgba(3, 3, 1, 0.96) 63.14%, rgba(3, 3, 1, 0.98) 81.4%, #030301 100%)
+
+  &__more
+    font-size: 14px
+    line-height: 17px
+    max-width: 110px
+
+  &__list
+    position: relative
+
+  & .slick-btn
+    top: 615px
+
+  & .slick-prev
+    left: 184px
+
+  & .slick-next
+    left: 237px
+
+
+@media only screen and (max-width: 1199px)
+  .interesting
+
+    & .custom-container
+      padding: 0
+
+    &__item
+      overflow: hidden
+
+    &__image img
+      margin-left: 515px
+
+    &__information
+      margin-left: 100px
+
+    & .slick-prev
+      left: 45px
+
+    & .slick-next
+      left: 98px
+
+@media only screen and (max-width: 991px)
+
+  .interesting
+
+    &__information
+      margin-left: 50px
+
+    &__image img
+      margin-left: 515px
+
+@media only screen and (max-width: 767px)
+  .interesting
+
+    &__information
+      margin-left: 25px
+      top: 170px
+
+    &__image img
+      margin-left: 65px
+
+    &__text
+      mask-image: none
+
+@media only screen and (max-width: 575px)
+  .interesting
+    margin-top: 90px
+
+    &__text
+      max-width: 460px
+      max-height: 138px
+      overflow: hidden
+
+@media only screen and (max-width: 320px)
+  .interesting
+
+    &__item
+      min-height: 500px
+
+    &__information
+      margin-left: 10px
+      top: 70px
+
+    &__image img
+      margin-left: -128px
+      max-height: 500px
+
+    &__category
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 10px
+
+    &__date
+      font-size: 12px
+      line-height: 15px
+      margin-left: 30px
+
+    &__author
+      margin-bottom: 50px
+
+    &__title
+      font-size: 14px
+      line-height: 17px
+      max-width: 290px
+      margin-bottom: 30px
+
+    &__text
+      margin-bottom: 20px
+      max-width: 300px
+      max-height: 170px
+
+    &__more
+      max-width: 160px
+      font-size: 12px
+      line-height: 15px
+
+    & .slick-btn
+      top: 515px
+
+    & .slick-prev
+      left: 5px
+
+    & .slick-next
+      left: 58px

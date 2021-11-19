@@ -2,11 +2,9 @@
 
   &__header
     display: flex
-    align-items: end
-    margin-bottom: 50px
 
   &__logo
-    position: absolute
+    position: relative
 
   &__logo::after
     content: ''
@@ -68,15 +66,13 @@
     & span
       font-weight: 600
 
-.description__item
+.category__item
   display: inline-block
 
-  & + .description__item
+  & + .category__item
     margin-left: 30px
 
-
 @media only screen and (max-width: 1199px)
-
   .top-authors
 
     &__item
@@ -93,7 +89,6 @@
 
 
 @media only screen and (max-width: 991px)
-
   .top-authors
 
     &__item
@@ -108,14 +103,10 @@
     &__date
       margin-bottom: 20px
 
-  .description__item+.description__item
+  .category__item+.category__item
     margin-left: 15px
 
-
-
-
 @media only screen and (max-width: 767px)
-
   .top-authors
 
     &__list
@@ -136,12 +127,10 @@
     &__item + &__item
       margin-left: 0 !important
 
-
 @media only screen and (max-width: 575px)
 
 
 @media only screen and (max-width: 320px)
-
   .top-authors
 
     & .little-container
@@ -177,6 +166,6 @@
     &__date
       margin-bottom: 15px
 
-  .description__item
+  .category__item
     font-size: 10px
     line-height: 12px

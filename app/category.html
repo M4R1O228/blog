@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="custom-container">
+        <div class="header-top">
+            <div class="logo">
+                <span class="logo__title_first"> Hi</span>
+                News <span class="logo__title_second">ru</span>
+            </div>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Космос</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Медицина</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Технологии</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Здоровье</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">NASA</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Tesla</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="">Еще...</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="" class="login__button">
+                    <span></span>
+                </a>
+                <ul class="login__list">
+                    <li class="login__list-item">
+                        <a class="login__list-link" href="">Поиск</a>
+                    </li>
+                    <li class="login__list-item">
+                        <a class="login__list-link" href="">Реклама</a>
+                    </li>
+                    <li class="login__list-item">
+                        <a class="login__list-link" href="">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="category-articles">
+    <div class="little-container">
+        <div class=" category-articles__list">
+            <div class=" category-articles__item">
+                <div class="category-articles__image">
+                    <img src="img/category-articles/category-articles-1.png" alt="">
+                </div>
+                <div class="category-articles__category category">
+                    Исследования
+                    <span class="category-articles__date date">27.06.2020</span>
+                </div>
+                <div class="category-articles__title title">
+                    Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                </div>
+                <div class="author category-articles__author">
+                    Николай Хижняк
+                </div>
+            </div>
+
+            <div class="category-articles__item">
+                <div class="category-articles__image">
+                    <img src="img/category-articles/category-articles-2.png" alt="">
+                </div>
+                <div class="category-articles__category category">
+                    Технологии
+                    <span class="category-articles__date date">30.06.2020</span>
+                </div>
+                <div class="category-articles__title title">
+                    В какой туалет будут ходить будущие жители Луны?
+                </div>
+                <div class="author category-articles__author">
+                    Рамис Ганиев
+                </div>
+            </div>
+
+            <div class="category-articles__item">
+                <div class="category-articles__image">
+                    <img src="img/category-articles/category-articles-3.png" alt="">
+                </div>
+                <div class="category-articles__category category">
+                    Это интересно
+                    <span class="category-articles__date date">27.06.2020</span>
+                </div>
+                <div class="category-articles__title title">
+                    NASA показало 10 лет из жизни Солнца на одном видео
+                </div>
+                <div class="author category-articles__author">
+                    Рамис Ганиев
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="popular-tags">
+    <div class="little-container">
+
+        <div class="popular-tags__header">
+            <div class="popular-tags__title section-title">
+                Популярные теги
+            </div>
+        </div>
+
+        <div class="popular-tags__list popular-tags__slider">
+            <div class="popular-tags__item">
+                <div class="popular-tags__image">
+                    <img src="img/popular-tags/popular-tags-1.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Исследования</div>
+            </div>
+
+            <div class="popular-tags__item">
+                <div class="popular-tags__image">
+                    <img src="img/popular-tags/popular-tags-2.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Технологии</div>
+            </div>
+
+            <div class="popular-tags__item">
+                <div class="popular-tags__image">
+                    <img src="img/popular-tags/popular-tags-3.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Экзоплаеты</div>
+            </div>
+
+            <div class="popular-tags__item">
+                <div class="popular-tags__image">
+                    <img src="img/popular-tags/popular-tags-4.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Звезды</div>
+            </div>
+        </div>
+        <div class="popular-tags__all-tags more">
+            Все теги
+        </div>
+    </div>
+</section>
+
+
+<section class="most-talked">
+    <span class="most-talked-slider__counter slider__counter"></span>
+    <div class="little-container">
+        <div class="most-talked__header">
+            <div class="most-talked__title section-title">
+                Самые обсуждаемые
+            </div>
+        </div>
+
+        <div class="most-talked__list most-talked__slider">
+            <div class="most-talked__item">
+                <div class="most-talked__image">
+                    <img src="img/most-talked/most-talked-1.png" alt="">
+                </div>
+                <div class="most-talked__information">
+                    <div class="most-talked__category category">
+                        Исследования
+                        <span class="most-talked__date date">27.06.2020</span>
+                    </div>
+                    <div class="most-talked__title title">
+                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    </div>
+                    <div class="author most-talked__author">
+                        Николай Хижняк
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-talked__item">
+                <div class="most-talked__image">
+                    <img src="img/most-talked/most-talked-2.png" alt="">
+                </div>
+                <div class="most-talked__information">
+                    <div class="most-talked__category category">
+                        Исследования
+                        <span class="most-talked__date date">27.06.2020</span>
+                    </div>
+                    <div class="most-talked__title title">
+                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    </div>
+                    <div class="author most-talked__author">
+                        Николай Хижняк
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-talked__item">
+                <div class="most-talked__image">
+                    <img src="img/most-talked/most-talked-3.png" alt="">
+                </div>
+                <div class="most-talked__information">
+                    <div class="most-talked__category category">
+                        Исследования
+                        <span class="most-talked__date date">27.06.2020</span>
+                    </div>
+                    <div class="most-talked__title title">
+                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    </div>
+                    <div class="author most-talked__author">
+                        Николай Хижняк
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-talked__item">
+                <div class="most-talked__image">
+                    <img src="img/most-talked/most-talked-4.png" alt="">
+                </div>
+                <div class="most-talked__information">
+                    <div class="most-talked__category category">
+                        Исследования
+                        <span class="most-talked__date date">27.06.2020</span>
+                    </div>
+                    <div class="most-talked__title title">
+                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    </div>
+                    <div class="author most-talked__author">
+                        Николай Хижняк
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-talked__item">
+                <div class="most-talked__image">
+                    <img src="img/most-talked/most-talked-5.png" alt="">
+                </div>
+                <div class="most-talked__information">
+                    <div class="most-talked__category category">
+                        Исследования
+                        <span class="most-talked__date date">27.06.2020</span>
+                    </div>
+                    <div class="most-talked__title title">
+                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    </div>
+                    <div class="author most-talked__author">
+                        Николай Хижняк
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="interesting">
+    <div class="custom-container">
+        <div class="interesting__list interesting__list-slider">
+            <div class="interesting__item">
+                <div class="interesting__image">
+                    <img src="img/interesting/interesting-1.png" alt="">
+                </div>
+                <div class="interesting__information">
+                    <div class="interesting__category category">
+                        Это интересно
+                    </div>
+                    <div class="interesting__date date">
+                        27.06.2020
+                    </div>
+                    <div class="interesting__title title">
+                        Как работает ионный двигатель и где он применяется
+                    </div>
+                    <div class="interesting__author author">
+                        Артем Сутягин
+                    </div>
+                    <div class="interesting__text">
+
+                        Ученые уже придумали или готовятся придумать много новых типов двигателей для космических
+                        кораблей.
+                        Самые смелые предположения даже говорят про варп-двигатель, который должен разгонять корабль до
+                        скоростей, в несколько раз превышающих скорость света за счет искривления пространства в мощном
+                        гравитационном поле. Пока это только фантастика, которая скоро может стать перспективой. Зато
+                        ионные
+                        двигатели уже существуют и даже применяются.
+                    </div>
+                    <div class="interesting__more more">
+                        Читать далее
+                    </div>
+                </div>
+            </div>
+
+            <div class="interesting__item">
+                <div class="interesting__image">
+                    <img src="img/interesting/interesting-1.png" alt="">
+                </div>
+                <div class="interesting__information">
+                    <div class="interesting__category category">
+                        Это интересно
+                    </div>
+                    <div class="interesting__date date">
+                        27.06.2020
+                    </div>
+                    <div class="interesting__title title">
+                        Как работает ионный двигатель и где он применяется
+                    </div>
+                    <div class="interesting__author author">
+                        Артем Сутягин
+                    </div>
+                    <div class="interesting__text">
+                        Ученые уже придумали или готовятся придумать много новых типов двигателей для космических
+                        кораблей.
+                        Самые смелые предположения даже говорят про варп-двигатель, который должен разгонять корабль до
+                        скоростей, в несколько раз превышающих скорость света за счет искривления пространства в мощном
+                        гравитационном поле. Пока это только фантастика, которая скоро может стать перспективой. Зато
+                        ионные
+                        двигатели уже существуют и даже применяются.
+                    </div>
+                    <div class="interesting__more more">
+                        Читать далее
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="last-articles popular-articles">
+    <span class="popular-articles-slider__counter slider__counter"></span>
+    <div class="little-container">
+        <div class="popular-articles__header">
+            <div class="popular-articles__title section-title">
+                Популярные статьи
+            </div>
+        </div>
+        <div class="last-articles__list popular-articles__slider">
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-1.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-2.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Скафандр SpaceX был создан голливудским дизайнером
+                    </div>
+                    <div class="author last-articles__author">
+                        Артем Сутягин
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-3.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Исследования
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Астрономы впервые увидели рождение планеты рядом с молодой звездой
+                    </div>
+                    <div class="author last-articles__author">
+                        Александр Богданов
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-4.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">01.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Не только космические. Какие еще бывают скафандры
+                    </div>
+                    <div class="author last-articles__author">
+                        Артем Сутягин
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-5.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Исследования
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Астрономам удалось увидеть гибель другой звёздной системы
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item popular-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/popular-articles/popular-articles-6.png" alt="">
+                </div>
+                <div class="popular-articles__information">
+                    <div class="last-articles__category category">
+                        Технологии
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Что такое Южно-Атлантическая магнитная аномалия и почему это опасно для всех
+                    </div>
+                    <div class="author last-articles__author">
+                        Артем Сутягин
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="popular-tags popular-tags__second">
+    <div class="little-container">
+
+        <div class="popular-tags__list popular-tags__slider">
+            <div class="popular-tags__item popular-tags__item-circle">
+                <div class="popular-tags__image popular-tags__image-circle">
+                    <img src="img/popular-tags/popular-tags-circle-1.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Tesla</div>
+            </div>
+
+            <div class="popular-tags__item popular-tags__item-circle">
+                <div class="popular-tags__image popular-tags__image-circle">
+                    <img src="img/popular-tags/popular-tags-circle-2.png" alt="">
+                </div>
+                <div class="popular-tags__category category">SpaceX</div>
+            </div>
+
+            <div class="popular-tags__item popular-tags__item-circle">
+                <div class="popular-tags__image popular-tags__image-circle">
+                    <img src="img/popular-tags/popular-tags-circle-3.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Nasa</div>
+            </div>
+
+            <div class="popular-tags__item popular-tags__item-circle">
+                <div class="popular-tags__image popular-tags__image-circle">
+                    <img src="img/popular-tags/popular-tags-circle-4.png" alt="">
+                </div>
+                <div class="popular-tags__category category">Роскосмос</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="last-articles all-articles">
+    <div class="little-container">
+        <div class="all-articles__header">
+            <div class="all-articles__title section-title">
+                Все статьи
+            </div>
+        </div>
+        <div class="last-articles__list">
+            <div class="last-articles__item all-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-1.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-2.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-3.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-4.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-5.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-6.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-7.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-8.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+            <div class="last-articles__item last-articles__item">
+                <div class="last-articles__image">
+                    <img src="img/all-articles/all-articles-9.png" alt="">
+                </div>
+                <div class="last-articles__information">
+                    <div class="last-articles__category category">
+                        Это интересно
+                        <span class="last-articles__date date">27.06.2020</span>
+                    </div>
+                    <div class="last-articles__title title">
+                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    </div>
+                    <div class="author last-articles__author">
+                        Любовь Соковикова
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="all-articles__more more">
+            Загрузить еще
+        </div>
+        <div class="all-articles__pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li class="pagination__item">...</li>
+                <li class="pagination__item">16</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="little-container">
+        <div class="footer__logo logo">
+            <span class="logo__title_first"> Hi</span>
+            News <span class="logo__title_second footer__logo_second">ru</span>
+        </div>
+
+        <nav class="footer__menu">
+            <div class="footer__menu-items">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Загадки космоса</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Вселенная</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Илон Маск</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">SpaceX</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Nasa</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Tesla</a>
+                    </li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">О проекте</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Контакты</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Реклама</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="footer__social">
+            <div class="footer__image">
+                <a href="#" class="footer__social-link"><img src="img/footer/footer-instagram.svg" alt=""></a>
+            </div>
+            <div class="footer__image">
+                <a href="#" class="footer__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+            </div>
+            <div class="footer__image">
+                <a href="#" class="footer__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+            </div>
+            <div class="footer__image">
+                <a href="#" class="footer__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+            </div>
+            <div class="footer__image">
+                <a href="#" class="footer__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

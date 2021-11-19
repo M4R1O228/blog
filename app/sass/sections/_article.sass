@@ -1,0 +1,141 @@
+.article
+
+  &__category
+    margin-top: 0
+    margin-bottom: 20px
+
+  &__information
+    display: flex
+    justify-content: space-between
+
+  &__title
+    font-size: 36px
+    line-height: 44px
+    letter-spacing: 0.01em
+    margin-bottom: 60px
+
+  &__data
+    display: flex
+    justify-content: start
+    font-size: 21px
+    line-height: 25px
+    letter-spacing: 0.01em
+
+    & span
+      font-family: ProstoOne
+      display: block
+      color: #b1b1b1
+      font-size: 12px
+      line-height: 15px
+  &__author
+    font-family: "Garamond Pro"
+
+  &__date
+    font-family: "Garamond Pro"
+    margin-left: 70px
+
+  &__comments
+    font-family: "Garamond Pro"
+    margin-left: 70px
+    margin-top: 15px
+    position: relative
+
+  &__comments::before
+    content: ''
+    background-image: url("../../img/others/others-comments-black.svg")
+    width: 14px
+    height: 14px
+    position: absolute
+    top: 6px
+    left: -19px
+
+  &__description
+    font-family: "Garamond Pro"
+    font-weight: 600
+    font-size: 23px
+    line-height: 124.35%
+    max-width: 600px
+
+  &__text_first
+    margin-bottom: 20px
+
+  &__image
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__image img
+    max-width: 1400px
+    max-height: 600px
+
+@media only screen and (max-width: 1199px)
+
+  .article
+
+    &__image img
+      max-width: 1200px
+      min-height: 600px
+      object-fit: cover
+
+@media only screen and (max-width: 991px)
+  .article
+    &__description
+      margin-top: 50px
+
+    &__information
+      flex-direction: column
+      max-width: 800px
+
+    &__image img
+      max-width: 991px
+
+@media only screen and (max-width: 767px)
+  .article
+
+    &__image img
+      max-width: 767px
+
+@media only screen and (max-width: 575px)
+  .article
+
+    &__image img
+      max-width: 575px
+      min-height: auto
+@media only screen and (max-width: 320px)
+  .article
+
+    & .little-container
+      padding: 0 10px
+
+    &__category
+      margin-bottom: 10px
+
+    &__title
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 30px
+
+    &__data
+      font-size: 16px
+      line-height: 19px
+
+    &__data span
+      font-size: 10px
+      line-height: 12px
+
+    &__date,
+    &__comments
+      margin-left: 41px
+
+    &__comments
+      margin-top: 12px
+
+    &__comments::before
+      top: 2px
+
+    &__description
+      font-size: 16px
+
+    &__image
+      margin-top: 30px

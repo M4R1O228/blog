@@ -1,3 +1,6 @@
+body
+	font-family: ProstoOne
+
 .custom-container
 	max-width: 1600px
 	margin: 0 auto
@@ -8,13 +11,17 @@
 	max-width: 1230px
 	margin: 0 auto
 	padding: 0 15px
-	font-family: 'ProstoOne'
+
+.article-container
+	max-width: 820px
+	margin: 0 auto
+	padding: 0 10px
 
 .section-title
 	letter-spacing: 0.01em
 	font-size: 32px
 	line-height: 40px
-	font-family: 'ProstoOne'
+	margin-bottom: 50px
 
 .title
 	font-size: 18px
@@ -38,13 +45,15 @@
 .more
 	max-width: 40px
 	text-decoration: underline
+	font-size: 16px
+	line-height: 20px
+	margin: 0 auto
 
 .date
-	font-family: 'ProstoOne'
 	margin-left: 30px
 	color: #ADADAD
 
-.description
+.category
 	font-size: 12px
 	line-height: 15px
 	color: #FD561F
@@ -64,9 +73,6 @@
 		display: flex
 		justify-content: center
 		flex-wrap: wrap
-
-		&-item
-			//display: inline-block
 
 		&-item + .tags__list-item
 			margin-left: 30px
@@ -102,12 +108,25 @@
 .section-link
 	margin-left: auto
 	& a
-		font-family: 'ProstoOne'
 		font-size: 14px
 		line-height: 17px
 		letter-spacing: 0.01em
 		text-decoration: underline
 		color: #000
+
+.slick-btn
+	position: absolute
+	height: 10px
+	width: 30px
+
+.slider__counter
+	position: absolute
+	z-index: 100
+	color: #000
+	font-family: ProstoOne
+	font-size: 14px
+	line-height: 17px
+	letter-spacing: 0.01em
 
 
 .button

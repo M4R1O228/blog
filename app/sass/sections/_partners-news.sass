@@ -36,7 +36,7 @@
   &__more
     margin: 70px auto 100px auto
 
-  &__description
+  &__category
     color: #2FC31A
     font-size: 12px
     line-height: 15px
@@ -45,7 +45,7 @@
     position: relative
     margin-left: 29px
 
-  &__item:nth-child(1) .partners-news__description::before
+  &__item:nth-child(1) .partners-news__category::before
     content: ''
     position: absolute
     width: 14px
@@ -54,7 +54,7 @@
     left: -27px
     background-image: url("../../img/partners-news/partners-news-android.svg")
 
-  &__description::before
+  &__category::before
     content: ''
     position: absolute
     width: 13px
@@ -63,7 +63,31 @@
     left: -27px
     background-image: url("../../img/partners-news/partners-news-circle.svg")
 
+  &__date
+    font-family: ProstoOne
+
+.partners-news-article
+  margin-top: 70px
+
+  & .little-container
+    border-top: 1px solid
+    padding: 15px 0 0
+    max-width: 1200px
+
+  &__logo
+    font-size: 31px
+    line-height: 38px
+
+  &__category
+    margin-top: 0
+
 @media only screen and (max-width: 1199px)
+
+  .partners-news-article
+
+    & .little-container
+      max-width: 1230px
+      padding: 15px 10px 0
 
 
 @media only screen and (max-width: 991px)
@@ -94,17 +118,12 @@
     &__item:nth-child(1), .partners-news__item:nth-child(2)
       margin-bottom: 30px
 
-
-
 @media only screen and (max-width: 767px)
 
   .partners-news
     margin-top: 70px
 
-
-
 @media only screen and (max-width: 575px)
-
   .partners-news
 
     &__item
@@ -125,7 +144,6 @@
 
 
 @media only screen and (max-width: 320px)
-
   .partners-news
     &__logo
       font-size: 18px
