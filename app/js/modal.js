@@ -1,6 +1,6 @@
 const modalLinks = document.querySelectorAll('.link-modal');
 const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll('.lock-padding');
+const modalCloseIcon = document.querySelectorAll('.modal-window__close');
 
 let unlock = true;
 
@@ -18,7 +18,6 @@ if (modalLinks.length > 0) {
     }
 }
 
-const modalCloseIcon = document.querySelectorAll('.modal-window__close');
 if (modalCloseIcon.length > 0) {
     for (let i = 0; i < modalCloseIcon.length; i++) {
         const element = modalCloseIcon[i];
@@ -34,10 +33,10 @@ function modalOpen(currentModal) {
         const modalActive = document.querySelector('.modal-window.open');
         console.log(modalActive)
         if (modalActive) {
-            modalClose(modalActive, false);
-        } else {
-            bodyLock();
+            modalClose(modalActive);
         }
+        document.querySelector('.login__list').classList.remove('active');
+        document.querySelector('.login__button').classList.remove('active');
         currentModal.classList.add('open');
         currentModal.addEventListener('click', (event) => {
            if (!event.target.closest('.modal-window__content')) {
@@ -47,49 +46,10 @@ function modalOpen(currentModal) {
     }
 }
 
-function modalClose(modalActive, doUnlock = true) {
+function modalClose(modalActive, ) {
     if (unlock) {
         modalActive.classList.remove('open');
-        if (doUnlock) {
-            bodyUnlock();
-        }
     }
-}
-
-function bodyLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('.header').offsetWidth + 'px';
-
-    if (lockPadding.length > 0) {
-        for (let i = 0; i < lockPadding.length; i++) {
-            const element = lockPadding[i];
-            element.style.paddingRight = lockPaddingValue;
-        }
-    }
-    body.style.paddingRight  = lockPaddingValue;
-    body.classList.add('lock');
-
-    unlock = false;
-    setTimeout(() => {
-        unlock = true
-    }, timeout);
-}
-
-function bodyUnlock() {
-    setTimeout(() => {
-        if (lockPadding.length > 0) {
-            for (let i = 0; i < lockPadding.length; i++) {
-                const element = lockPadding[i];
-                element.style.paddingRight = '0px';
-            }
-        }
-        body.style.paddingRight = '0px';
-        body.classList.remove('lock');
-    }, timeout);
-
-    unlock = false;
-    setTimeout(() => {
-        unlock = true;
-    }, timeout);
 }
 
 
