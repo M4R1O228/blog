@@ -1,5 +1,5 @@
 .category-articles
-  margin-top: 0 !important
+  padding-bottom: 50px
 
   &__list
     display: flex
@@ -7,47 +7,26 @@
     justify-content: space-between
 
   &__item
-    max-width: 390px
     margin-bottom: 50px
 
-  &__image img
-    max-width: 390px
-    min-height: 500px
+  &__image
+    height: 500px
+    width: 100%
+
+    & img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
   &__author
     color: #000
     margin-left: 25px
 
-  &__more
-    margin: 70px auto 100px auto
-
-
 @media only screen and (max-width: 1199px)
 
-  .category-articles__item
-    max-width: 379px
-
-  .category-articles__image img
-    max-width: 379px
-
-  .category-articles__more
-    margin-bottom: 70px
 
 @media only screen and (max-width: 991px)
-
   .category-articles
-
-    &__list
-      justify-content: space-around
-
-    &__item
-      max-width: 310px
-
-    &__image img
-      max-width: 310px
-      min-height: auto
-
-
 
 
 @media only screen and (max-width: 767px)
@@ -56,13 +35,6 @@
 
     &__list
       justify-content: center
-
-    &__item
-      max-width: 390px
-      margin-left: 0 !important
-
-    &__image img
-      max-width: 390px
 
     &__more
       margin-top: 50px
@@ -90,8 +62,8 @@
       margin-bottom: 30px
       margin-top: 96px
 
-    &__image img
-      max-width: 300px
+    &__image
+      max-height: 385px
 
     &__category
       margin-top: 10px

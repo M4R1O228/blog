@@ -60,7 +60,6 @@ function modalClose(modalActive, doUnlock = true) {
 function bodyLock() {
     const lockPaddingValue = window.innerWidth - document.querySelector('.header').offsetWidth + 'px';
 
-
     body.style.paddingRight  = lockPaddingValue;
     body.classList.add('lock');
 

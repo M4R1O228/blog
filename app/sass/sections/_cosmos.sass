@@ -1,19 +1,26 @@
 .cosmos
   margin-top: 100px
+  padding-bottom: 100px
 
   &__logo
     margin-right: 50px
     margin-bottom: 0
 
+  &__image
+    height: 500px
+    position: relative
+
   &__image img
-    max-width: 390px
+    width: 100%
+    height: 100%
+    object-fit: cover
 
   &__header
     display: flex
     align-items: end
-    margin-bottom: 50px
 
   &__list
+    margin-top: 50px
     display: flex
     justify-content: space-between
 
@@ -21,29 +28,16 @@
     margin-left: 25px
     color: #000
 
-  &__more
-    margin: 70px auto 100px auto
-
-
 @media only screen and (max-width: 1199px)
 
   .cosmos
     margin-top: 70px
 
-    &__header
-      margin-bottom: 40px
-
-    &__image img
-      max-width: 379px
-
-    &__item
-      max-width: 379px
-
-    &__more
-      margin-bottom: 70px
-
 @media only screen and (max-width: 991px)
   .cosmos
+
+    & .little-container
+      padding: 0 10px
 
     &__list
       flex-wrap: wrap
@@ -51,23 +45,14 @@
     &__logo
       margin-right: 35px
 
-    &__item
-      max-width: 310px
-
-    &__image img
-      max-width: 310px
-
     &__more
       margin-top: 50px
-
-  .tags__list-item+.tags__list-item
-    margin-left: 20px
 
 @media only screen and (max-width: 767px)
   .cosmos
 
     &__logo
-      margin-right: 45px
+      margin-right: 60px
 
     &__header
       flex-wrap: wrap
@@ -77,19 +62,19 @@
       margin: 15px auto 0
 
     &__list
-      justify-content: space-around
+      justify-content: space-between
 
     &__item
-      max-width: 390px
-
-      & + .cosmos__item
-        margin-top: 50px
-
-    &__image img
-      max-width: 390px
+      margin-bottom: 50px
 
 @media only screen and (max-width: 575px)
+  .cosmos
 
+    &__list
+      justify-content: center
+
+    &__more
+      margin-top: 0
 
 @media only screen and (max-width: 320px)
 
@@ -101,12 +86,6 @@
     &__logo
       font-size: 18px
       line-height: 22px
-
-    &__image img
-      max-width: 300px
-
-    &__item
-      max-width: 300px
 
     &__category
       margin-top: 10px

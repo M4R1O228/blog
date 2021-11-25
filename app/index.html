@@ -44,6 +44,7 @@
                 </ul>
             </nav>
             <div class="login">
+
                 <a href="" class="login__button">
                     <span></span>
                 </a>
@@ -106,42 +107,62 @@
 </header>
 
 <section class="main-news">
-    <span class="main-news-slider__counter slider__counter"></span>
-    <div class="main-news__slider custom-container">
-        <div class="news news__big">
-            <div class="news__big-container">
-                <div class="news__category_big category">
-                    Это интересно
-                </div>
-                <div class="news__title_big">
-                    Существует радиостанция, которая работает с 1982 года и никто не знает почему
-                </div>
-                <div class="author news__author_big">
-                    Любовь Соковикова
-                </div>
-            </div>
-        </div>
-        <div class="news news__little">
-            <div class="news news__little_first">
-                <div class="news__category_little category">
-                    Это интересно
-                </div>
-                <div class="news__title_little news__title_little-first">
-                    15 цитат Альберта Эйнштейна о науке и жизни
-                </div>
-                <div class="author news__author_little">
-                    Рамис Ганиев
+    <div class="container-fluid p-0">
+        <span class="main-news-slider__counter slider__counter"></span>
+        <div class="main-news__slider main-news__body">
+            <div class="col-8">
+                <div class="news news__big">
+                    <div class="news__big-image">
+                        <img src="img/main-news/news__big.png" alt="">
+                    </div>
+                    <div class="news__big-information">
+                        <div class="news__category_big category">
+                            Это интересно
+                        </div>
+                        <div class="news__title_big">
+                            <a href="#" class="news__title-link">Существует радиостанция, которая работает с 1982 года и
+                                никто не знает почему</a>
+                        </div>
+                        <div class="author news__author_big">
+                            Любовь Соковикова
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="news news__little_second">
-                <div class="category news__category_little">
-                    Исследование
-                </div>
-                <div class="news__title_little news__title_little-second">
-                    Мы все что, бессмертные?
-                </div>
-                <div class="author news__author_little">
-                    Ренат Гришин
+            <div class="col-4">
+                <div class="news news__little">
+                    <div class="news news__little_first">
+                        <div class="news__little-image">
+                            <img src="img/main-news/news__little_first.png" alt="">
+                        </div>
+                        <div class="news__little-information">
+                            <div class="news__category_little category">
+                                Это интересно
+                            </div>
+                            <div class="news__title_little news__title_little-first">
+                                <a href="#" class="news__title-link">15 цитат Альберта Эйнштейна о науке и жизни</a>
+                            </div>
+                            <div class="author news__author_little">
+                                Рамис Ганиев
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news news__little_second">
+                        <div class="news__little-image">
+                            <img src="img/main-news/news__little_second.png" alt="">
+                        </div>
+                        <div class="news__little-information">
+                            <div class="category news__category_little">
+                                Исследование
+                            </div>
+                            <div class="news__title_little news__title_little-second">
+                                <a href="#" class="news__title-link">Мы все что, бессмертные?</a>
+                            </div>
+                            <div class="author news__author_little">
+                                Ренат Гришин
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,13 +171,11 @@
 
 <section class="last-articles">
     <div class="little-container">
-
         <div class="last-articles__logo section-title">
             Последние статьи
         </div>
-
-        <div class="last-articles__list">
-            <div class="last-articles__item">
+        <div class="last-articles__list row">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-1.png" alt="">
                 </div>
@@ -166,7 +185,8 @@
                         <span class="last-articles__date date">29.07.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Российский вулкан извергается особыми алмазами. Откуда они там взялись?
+                        <a href="#" class="last-articles__title-link">Российский вулкан извергается особыми алмазами.
+                            Откуда они там взялись?</a>
                     </div>
                     <div class="author last-articles__author">
                         Александр Богданов
@@ -174,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-2.png" alt="">
                 </div>
@@ -184,7 +204,7 @@
                         <span class="last-articles__date date">24.07.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Можно ли встретить своего двойника на Земле?
+                        <a href="#" class="last-articles__title-link">Можно ли встретить своего двойника на Земле?</a>
                     </div>
                     <div class="author last-articles__author">
                         Александр Богданов
@@ -192,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-3.png" alt="">
                 </div>
@@ -202,7 +222,8 @@
                         <span class="last-articles__date date">30.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        В какой туалет будут ходить будущие жители Луны?
+                        <a href="#" class="last-articles__title-link">В какой туалет будут ходить будущие жители
+                            Луны?</a>
                     </div>
                     <div class="author last-articles__author">
                         Рамис Ганиев
@@ -210,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-4.png" alt="">
                 </div>
@@ -220,7 +241,8 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Метеориты могли появиться на планетах с кипящей лавой
+                        <a href="#" class="last-articles__title-link">Метеориты могли появиться на планетах с кипящей
+                            лавой</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -228,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-5.png" alt="">
                 </div>
@@ -238,7 +260,8 @@
                         <span class="last-articles__date date">29.07.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Virgin Galactic показала интерьер корабля для космического туризма
+                        <a href="#" class="last-articles__title-link">Virgin Galactic показала интерьер корабля для
+                            космического туризма</a>
                     </div>
                     <div class="author last-articles__author">
                         Николай Хижняк
@@ -246,7 +269,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item">
+            <div class="last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/last-articles/last-articles-6.png" alt="">
                 </div>
@@ -256,7 +279,8 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Почему наши предки чувствовали боль сильнее, чем мы?
+                        <a href="#" class="last-articles__title-link">Почему наши предки чувствовали боль сильнее, чем
+                            мы?</a>
                     </div>
                     <div class="author last-articles__author">
                         Рамис Ганиев
@@ -265,14 +289,13 @@
             </div>
         </div>
         <div class="last-articles__more more">
-            Еще
+            <a href="">Еще</a>
         </div>
     </div>
 </section>
 
 <section class="popular-video">
-    <div class="custom-container">
-
+    <div class="container-fluid">
         <div class="popular-video__header">
             <div class="popular-video__logo logo">
                 <span class="logo__title_first"> Hi</span>
@@ -281,72 +304,81 @@
             <div class="popular-video__title section-title">
                 Популярные видео
             </div>
-            <div class="popular-video__link section-link">
+            <div class="popular-video__link section-link popular-video__link_first">
                 <a href="#">Все видео</a>
             </div>
         </div>
 
-        <div class="popular-video__list popular-video__slider">
-            <div class="popular-video__item">
-                <div class="popular-video__image">
-                    <img src="img/popular-video/popular-video-1.png" alt="">
-                </div>
-                <div class="popular-video__name">
-                    Сколько пластикового мусора наберется на Земле в 2040 году?
-                </div>
-                <div class="popular-video__data">
-                    <div class="popular-video__date">
-                        21.07.2020
+        <div class="container">
+            <div class="popular-video__list row flex-nowrap popular-video__slider">
+                <div class="popular-video__item col-12 col-md-4">
+                    <div class="popular-video__image">
+                        <img src="img/popular-video/popular-video-1.png" alt="">
                     </div>
-                    <div class="popular-video__views">
-                        12 356
+                    <div class="popular-video__name">
+                        <a href="#" class="popular-video__name-link">Сколько пластикового мусора наберется на Земле в
+                            2040 году?</a>
                     </div>
-                    <div class="popular-video__comments">
-                        7
+                    <div class="popular-video__data">
+                        <div class="popular-video__date">
+                            21.07.2020
+                        </div>
+                        <div class="popular-video__views">
+                            12 356
+                        </div>
+                        <div class="popular-video__comments">
+                            7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-video__item col-12 col-md-4">
+                    <div class="popular-video__image">
+                        <img src="img/popular-video/popular-video-2.png" alt="">
+                    </div>
+                    <div class="popular-video__name">
+                        <a href="#" class="popular-video__name-link">Какой рост был у самого высокого человека в
+                            мире?</a>
+                    </div>
+                    <div class="popular-video__data">
+                        <div class="popular-video__date">
+                            21.07.2020
+                        </div>
+                        <div class="popular-video__views">
+                            12 356
+                        </div>
+                        <div class="popular-video__comments">
+                            7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-video__item col-12 col-md-4">
+                    <div class="popular-video__image">
+                        <img src="img/popular-video/popular-video-3.png" alt="">
+                    </div>
+                    <div class="popular-video__name">
+                        <a href="#" class="popular-video__name-link">Самые большие извержения вулканов в истории
+                            человечества</a>
+                    </div>
+
+                    <div class="popular-video__data">
+                        <div class="popular-video__date">
+                            21.07.2020
+                        </div>
+                        <div class="popular-video__views">
+                            12 356
+                        </div>
+                        <div class="popular-video__comments">
+                            7
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="popular-video__item">
-                <div class="popular-video__image">
-                    <img src="img/popular-video/popular-video-2.png" alt="">
-                </div>
-                <div class="popular-video__name">
-                    Какой рост был у самого высокого человека в мире?
-                </div>
-                <div class="popular-video__data">
-                    <div class="popular-video__date">
-                        21.07.2020
-                    </div>
-                    <div class="popular-video__views">
-                        12 356
-                    </div>
-                    <div class="popular-video__comments">
-                        7
-                    </div>
-                </div>
-            </div>
-
-            <div class="popular-video__item">
-                <div class="popular-video__image">
-                    <img src="img/popular-video/popular-video-3.png" alt="">
-                </div>
-                <div class="popular-video__name">
-                    Самые большие извержения вулканов в истории человечества
-                </div>
-
-                <div class="popular-video__data">
-                    <div class="popular-video__date">
-                        21.07.2020
-                    </div>
-                    <div class="popular-video__views">
-                        12 356
-                    </div>
-                    <div class="popular-video__comments">
-                        7
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="popular-video__link section-link popular-video__link_second">
+            <a href="#">Все видео</a>
         </div>
     </div>
 </section>
@@ -378,8 +410,8 @@
             </div>
         </div>
 
-        <div class="cosmos__list">
-            <div class="cosmos__item">
+        <div class="cosmos__list row">
+            <div class="cosmos__item col-12 col-md-4 col-sm-6">
                 <div class="cosmos__image">
                     <img src="img/cosmos/cosmos-1.png" alt="">
                 </div>
@@ -388,14 +420,15 @@
                     <span class="cosmos__date date">27.06.2020</span>
                 </div>
                 <div class="cosmos__title title">
-                    Что такое Южно-Атлантическая магнитная аномалия и почему это опасно для всех
+                    <a href="#" class="cosmos__title-link">Что такое Южно-Атлантическая магнитная аномалия и почему это
+                        опасно для всех</a>
                 </div>
                 <div class="author cosmos__author">
                     Александр Богданов
                 </div>
             </div>
 
-            <div class="cosmos__item">
+            <div class="cosmos__item col-12 col-md-4 col-sm-6">
                 <div class="cosmos__image">
                     <img src="img/cosmos/cosmos-2.png" alt="">
                 </div>
@@ -404,14 +437,14 @@
                     <span class="cosmos__date date">01.06.2020</span>
                 </div>
                 <div class="cosmos__title title">
-                    Не только космические.Какие еще бывают скафандры
+                    <a href="" class="cosmos__title-link">Не только космические.Какие еще бывают скафандры</a>
                 </div>
                 <div class="author cosmos__author">
                     Александр Богданов
                 </div>
             </div>
 
-            <div class="cosmos__item">
+            <div class="cosmos__item col-12 col-md-4 col-sm-6">
                 <div class="cosmos__image">
                     <img src="img/cosmos/cosmos-3.png" alt="">
                 </div>
@@ -420,7 +453,7 @@
                     <span class="cosmos__date date">27.06.2020</span>
                 </div>
                 <div class="cosmos__title title">
-                    Астрономам удалось увидеть гибель другой звёздной системы
+                    <a href="#" class="cosmos__title-link">Астрономам удалось увидеть гибель другой звёздной системы</a>
                 </div>
                 <div class="author cosmos__author">
                     Александр Богданов
@@ -428,16 +461,14 @@
             </div>
         </div>
         <div class="cosmos__more more">
-            Еще
+            <a href="#">Еще</a>
         </div>
     </div>
-
 </section>
 
 
 <section class="interview">
-    <div class="custom-container">
-
+    <div class="container-fluid">
         <div class="interview__header">
             <div class="interview__logo logo">
                 <span class="logo__title_first"> Hi</span>
@@ -446,71 +477,78 @@
             <div class="interview__title section-title">
                 Интервью
             </div>
-            <div class="interview__link section-link">
+            <div class="interview__link section-link interview__link_first">
                 <a href="#">Все интервью</a>
             </div>
         </div>
+        <div class="container">
+            <div class="interview__list row flex-nowrap popular-video__slider">
+                <div class="interview__item col-12 col-md-4">
+                    <div class="interview__image">
+                        <img src="img/interview/interview-1.png" alt="">
+                    </div>
+                    <div class="interview__name name">
+                        <a href="#" class="interview__name-link">Константин Батыгин — автор гипотезы о Девятой
+                            планете</a>
+                    </div>
+                    <div class="interview__data">
+                        <div class="interview__date">
+                            21.07.2020
+                        </div>
+                        <div class="interview__views">
+                            12 356
+                        </div>
+                        <div class="interview__comments">
+                            7
+                        </div>
+                    </div>
+                </div>
 
-        <div class="interview__list popular-video__slider">
-            <div class="interview__item">
-                <div class="interview__image">
-                    <img src="img/interview/interview-1.png" alt="">
-                </div>
-                <div class="interview__name name">
-                    Константин Батыгин — автор гипотезы о Девятой планете
-                </div>
-                <div class="interview__data">
-                    <div class="interview__date">
-                        21.07.2020
+                <div class="interview__item col-12 col-md-4">
+                    <div class="interview__image">
+                        <img src="img/interview/interview-2.png" alt="">
                     </div>
-                    <div class="interview__views">
-                        12 356
+                    <div class="interview__name  name">
+                        <a href="#" class="interview__name-link">Маск назвал самый опасный для человечества
+                            искусственный интеллект</a>
                     </div>
-                    <div class="interview__comments">
-                        7
+                    <div class="interview__data">
+                        <div class="interview__date">
+                            16.07.2020
+                        </div>
+                        <div class="interview__views">
+                            10 335
+                        </div>
+                        <div class="interview__comments">
+                            5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interview__item col-12 col-md-4">
+                    <div class="interview__image">
+                        <img src="img/interview/interview-3.png" alt="">
+                    </div>
+                    <div class="interview__name  name">
+                        <a href="#" class="interview__name-link">Ася Казанцева: мозг – это бог</a>
+                    </div>
+                    <div class="interview__data">
+                        <div class="interview__date">
+                            16.07.2020
+                        </div>
+                        <div class="interview__views">
+                            22 789
+                        </div>
+                        <div class="interview__comments">
+                            12
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="interview__item">
-                <div class="interview__image">
-                    <img src="img/interview/interview-2.png" alt="">
-                </div>
-                <div class="interview__name  name">
-                    Маск назвал самый опасный для человечества искусственный интеллект
-                </div>
-                <div class="interview__data">
-                    <div class="interview__date">
-                        16.07.2020
-                    </div>
-                    <div class="interview__views">
-                        10 335
-                    </div>
-                    <div class="interview__comments">
-                        5
-                    </div>
-                </div>
-            </div>
-
-            <div class="interview__item">
-                <div class="interview__image">
-                    <img src="img/interview/interview-3.png" alt="">
-                </div>
-                <div class="interview__name  name">
-                    Ася Казанцева: мозг – это бог
-                </div>
-                <div class="interview__data">
-                    <div class="interview__date">
-                        16.07.2020
-                    </div>
-                    <div class="interview__views">
-                        22 789
-                    </div>
-                    <div class="interview__comments">
-                        12
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="interview__link section-link interview__link_second">
+            <a href="#">Все интервью</a>
         </div>
     </div>
 </section>
@@ -544,9 +582,8 @@
                 <a href="#">Все теги</a>
             </div>
         </div>
-
-        <div class="tesla__list">
-            <div class="tesla__item">
+        <div class="tesla__list row">
+            <div class="tesla__item col-12 col-md-8">
                 <div class="tesla__image">
                     <img src="img/tesla/tesla-1.png" alt="">
                 </div>
@@ -555,14 +592,14 @@
                     <span class="tesla__date date">27.06.2020</span>
                 </div>
                 <div class="tesla__title_big title">
-                    Новая разработка Tesla сделает электромобили почти вечными
+                    <a href="" class="tesla__title-link">Новая разработка Tesla сделает электромобили почти вечными</a>
                 </div>
                 <div class="author tesla__author">
                     Артем Сутягин
                 </div>
             </div>
 
-            <div class="tesla__item">
+            <div class="tesla__item col-12 col-md-4">
                 <div class="tesla__image">
                     <img src="img/tesla/tesla-2.png" alt="">
                 </div>
@@ -571,7 +608,8 @@
                     <span class="tesla__date date">27.06.2020</span>
                 </div>
                 <div class="tesla__title title">
-                    Tesla не остановить: Model S побила собственный рекорд автономности
+                    <a href="" class="tesla__title-link">Tesla не остановить: Model S побила собственный рекорд
+                        автономности</a>
                 </div>
                 <div class="author tesla__author">
                     Любовь Соковикова
@@ -579,7 +617,7 @@
             </div>
         </div>
         <div class="tesla__more more">
-            Еще
+            <a href="#">Еще</a>
         </div>
     </div>
 </section>
@@ -608,9 +646,9 @@
             </div>
         </div>
 
-        <div class="technologies__list">
-            <div class="technologies__items">
-                <div class="technologies__item">
+        <div class="technologies__list row">
+            <div class="technologies__items col-12 col-sm-4">
+                <div class="technologies__item col-12">
                     <div class="technologies__image">
                         <img src="img/technologies/technologies-1.png" alt="">
                     </div>
@@ -619,13 +657,14 @@
                         <span class="technologies__date date">28.07.2020</span>
                     </div>
                     <div class="technologies__title title">
-                        Пандемии и их последствия – как изменится мир после вспышки коронавируса?
+                        <a href="" class="technologies__title-link">Пандемии и их последствия – как изменится мир после
+                            вспышки коронавируса?</a>
                     </div>
                     <div class="author technologies__author">
                         Любовь Соковикова
                     </div>
                 </div>
-                <div class="technologies__item">
+                <div class="technologies__item col-12">
                     <div class="technologies__image">
                         <img src="img/technologies/technologies-2.png" alt="">
                     </div>
@@ -634,15 +673,16 @@
                         <span class="technologies__date date">28.07.2020</span>
                     </div>
                     <div class="technologies__title title">
-                        Зонд Solar Orbiter сделает самые подробные фотографии Солнца за всю историю наблюдений
+                        <a href="#" class="technologies__title-link">Зонд Solar Orbiter сделает самые подробные
+                            фотографии Солнца за всю историю наблюдений</a>
                     </div>
                     <div class="author technologies__author">
                         Рамис Ганиев
                     </div>
                 </div>
             </div>
-            <div class="technologies__items">
-                <div class="technologies__item">
+            <div class="technologies__items technologies__items_big col-12 col-sm-4">
+                <div class="technologies__item_big">
                     <div class="technologies__image">
                         <img src="img/technologies/technologies-3.png" alt="">
                     </div>
@@ -651,15 +691,16 @@
                         <span class="technologies__date date">28.07.2020</span>
                     </div>
                     <div class="technologies__title title">
-                        SpaceX может повторно использовать Falcon 9 и Crew Dragon для доставки людей на МКС
+                        <a href="#" class="technologies__title-link">SpaceX может повторно использовать Falcon 9 и Crew
+                            Dragon для доставки людей на МКС</a>
                     </div>
                     <div class="author technologies__author">
                         Рамис Ганиев
                     </div>
                 </div>
             </div>
-            <div class="technologies__items">
-                <div class="technologies__item">
+            <div class="technologies__items col-12 col-sm-4">
+                <div class="technologies__item col-12">
                     <div class="technologies__image">
                         <img src="img/technologies/technologies-4.png" alt="">
                     </div>
@@ -668,13 +709,14 @@
                         <span class="technologies__date date">28.07.2020</span>
                     </div>
                     <div class="technologies__title title">
-                        SpaceX, подвинься: зачем ОАЭ понадобилось лететь на Марс?
+                        <a href="#" class="technologies__title-link">SpaceX, подвинься: зачем ОАЭ понадобилось лететь на
+                            Марс?</a>
                     </div>
                     <div class="author technologies__author">
                         Рамис Ганиев
                     </div>
                 </div>
-                <div class="technologies__item">
+                <div class="technologies__item col-12">
                     <div class="technologies__image">
                         <img src="img/technologies/technologies-5.png" alt="">
                     </div>
@@ -683,7 +725,8 @@
                         <span class="technologies__date date">28.07.2020</span>
                     </div>
                     <div class="technologies__title title">
-                        Самая большая подводная лодка и история создания субмарин
+                        <a href="#" class="technologies__title-link">Самая большая подводная лодка и история создания
+                            субмарин</a>
                     </div>
                     <div class="author technologies__author">
                         Рамис Ганиев
@@ -693,7 +736,7 @@
 
         </div>
         <div class="technologies__more more">
-            Еще
+            <a href="#">Еще</a>
         </div>
     </div>
 </section>
@@ -708,85 +751,86 @@
                 <a href="#">Все авторы</a>
             </div>
         </div>
+        <div class="container">
+            <div class="top-authors__list row flex-nowrap popular-video__slider">
+                <div class="top-authors__item col-4 col-md-4">
+                    <div class="top-authors__image">
+                        <img src="img/top-authors/top-authors-1.png" alt="">
+                    </div>
+                    <div class="top-authors__information">
+                        <div class="top-authors__name">
+                            Любовь Соковикова
+                        </div>
+                        <div class="top-authors__materials">
+                            <span>666 материалов</span> для Hi-News.ru
+                        </div>
+                        <div class="top-authors__date">
+                            <span>11 месяцев</span> в редакции
+                        </div>
+                        <div class="top-authors__category">
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a class="category" href="">Внеземная жизнь</a>
+                                </li>
+                                <li class="category__item">
+                                    <a class="category" href="">Это интересно</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="top-authors__list popular-video__slider">
-            <div class="top-authors__item">
-                <div class="top-authors__image">
-                    <img src="img/top-authors/top-authors-1.png" alt="">
+                <div class="top-authors__item col-4 col-md-4">
+                    <div class="top-authors__image">
+                        <img src="img/top-authors/top-authors-2.png" alt="">
+                    </div>
+                    <div class="top-authors__information">
+                        <div class="top-authors__name">
+                            Рамис Ганиев
+                        </div>
+                        <div class="top-authors__materials">
+                            <span>1353 материалов</span> для Hi-News.ru
+                        </div>
+                        <div class="top-authors__date">
+                            <span>1 год и 10 месяцев</span> в редакции
+                        </div>
+                        <div class="top-authors__category">
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a class="category" href="">Интернет</a>
+                                </li>
+                                <li class="category__item">
+                                    <a class="category" href="">Биология</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="top-authors__information">
-                    <div class="top-authors__name">
-                        Любовь Соковикова
-                    </div>
-                    <div class="top-authors__materials">
-                        <span>666 материалов</span> для Hi-News.ru
-                    </div>
-                    <div class="top-authors__date">
-                        <span>11 месяцев</span> в редакции
-                    </div>
-                    <div class="top-authors__category">
-                        <ul class="category__list">
-                            <li class="category__item">
-                                <a class="category" href="">Внеземная жизнь</a>
-                            </li>
-                            <li class="category__item">
-                                <a class="category" href="">Это интересно</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
-            <div class="top-authors__item">
-                <div class="top-authors__image">
-                    <img src="img/top-authors/top-authors-2.png" alt="">
-                </div>
-                <div class="top-authors__information">
-                    <div class="top-authors__name">
-                        Рамис Ганиев
+                <div class="top-authors__item col-4 col-md-4">
+                    <div class="top-authors__image">
+                        <img src="img/top-authors/top-authors-3.png" alt="">
                     </div>
-                    <div class="top-authors__materials">
-                        <span>1353 материалов</span> для Hi-News.ru
-                    </div>
-                    <div class="top-authors__date">
-                        <span>1 год и 10 месяцев</span> в редакции
-                    </div>
-                    <div class="top-authors__category">
-                        <ul class="category__list">
-                            <li class="category__item">
-                                <a class="category" href="">Интернет</a>
-                            </li>
-                            <li class="category__item">
-                                <a class="category" href="">Биология</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="top-authors__item">
-                <div class="top-authors__image">
-                    <img src="img/top-authors/top-authors-3.png" alt="">
-                </div>
-                <div class="top-authors__information">
-                    <div class="top-authors__name">
-                        Дарья Елецкая
-                    </div>
-                    <div class="top-authors__materials">
-                        <span>489 материалов</span> для Hi-News.ru
-                    </div>
-                    <div class="top-authors__date">
-                        <span>7 месяцев</span> в редакции
-                    </div>
-                    <div class="top-authors__category">
-                        <ul class="category__list">
-                            <li class="category__item">
-                                <a class="category" href="">Астрофизика</a>
-                            </li>
-                            <li class="category__item">
-                                <a class="category" href="">Это интересно</a>
-                            </li>
-                        </ul>
+                    <div class="top-authors__information">
+                        <div class="top-authors__name">
+                            Дарья Елецкая
+                        </div>
+                        <div class="top-authors__materials">
+                            <span>489 материалов</span> для Hi-News.ru
+                        </div>
+                        <div class="top-authors__date">
+                            <span>7 месяцев</span> в редакции
+                        </div>
+                        <div class="top-authors__category">
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a class="category" href="">Астрофизика</a>
+                                </li>
+                                <li class="category__item">
+                                    <a class="category" href="">Это интересно</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -799,17 +843,31 @@
         <div class="partners-news__logo section-title">
             Новости партнеров:
         </div>
-        <div class="partners-news__list">
-            <div class="partners-news__item">
+        <div class="partners-news__list row">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-1.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="14" height="14" fill="url(#pattern0)"/>
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1_650" transform="scale(0.0131579)"/>
+                                    </pattern>
+                                    <image id="image0_1_650" width="76" height="76"
+                                           xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                        </div>
                         Смартфоны
                     </div>
                     <div class="partners-news__title">
-                        Три недели с Samsung Galaxy S20 Ultra — стоит ли он своих денег?
+                        <a href="#" class="partners-news__title-link">Три недели с Samsung Galaxy S20 Ultra — стоит ли
+                            он своих денег?</a>
                     </div>
                     <div class="partners-news__author author">
                         Артем Сутягин
@@ -818,16 +876,24 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-2.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         OS X
                     </div>
                     <div class="partners-news__title">
-                        Google тестирует новый Chrome, который меньше нагружает аккумулятор Mac
+                        <a href="#" class="partners-news__title">Google тестирует новый Chrome, который меньше нагружает
+                            аккумулятор Mac</a>
                     </div>
                     <div class="partners-news__author author">
                         Александр Богданов
@@ -836,16 +902,24 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-3.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         Суды и скандалы
                     </div>
                     <div class="partners-news__title">
-                        Павел Дуров призвал бороться с Apple и похвалил закон о российском софте
+                        <a href="" class="partners-news__title">Павел Дуров призвал бороться с Apple и похвалил закон о
+                            российском софте</a>=
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -854,16 +928,24 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6 ">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-4.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         Аксессуары
                     </div>
                     <div class="partners-news__title">
-                        Как Apple Watch смогут предотвращать анемию, астму и другие заболевания
+                        <a href="" class="partners-news__title-link">Как Apple Watch смогут предотвращать анемию, астму
+                            и другие заболевания</a>
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -920,19 +1002,48 @@
         </nav>
         <div class="footer__social">
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-instagram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6689 0H4.33105C1.94287 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.94287 16 4.33105 16H11.669C14.0571 16 16 14.0571 16 11.669V4.33105C16 1.94287 14.0571 0 11.6689 0V0ZM7.99998 12.3749C5.58764 12.3749 3.62512 10.4123 3.62512 7.99998C3.62512 5.58764 5.58764 3.62512 7.99998 3.62512C10.4123 3.62512 12.3749 5.58764 12.3749 7.99998C12.3749 10.4123 10.4123 12.3749 7.99998 12.3749ZM12.4795 4.65685C11.7666 4.65685 11.1867 4.07702 11.1867 3.36413C11.1867 2.65124 11.7666 2.07129 12.4795 2.07129C13.1924 2.07129 13.7723 2.65124 13.7723 3.36413C13.7723 4.07702 13.1924 4.65685 12.4795 4.65685Z"
+                              fill="black"/>
+                        <path d="M8.00012 4.56299C6.1051 4.56299 4.56323 6.10473 4.56323 7.99987C4.56323 9.89489 6.1051 11.4368 8.00012 11.4368C9.89525 11.4368 11.437 9.89489 11.437 7.99987C11.437 6.10473 9.89525 4.56299 8.00012 4.56299Z"
+                              fill="black"/>
+                        <path d="M12.4795 3.00952C12.2839 3.00952 12.1248 3.1687 12.1248 3.36426C12.1248 3.55981 12.2839 3.71899 12.4795 3.71899C12.6752 3.71899 12.8343 3.55994 12.8343 3.36426C12.8343 3.16858 12.6752 3.00952 12.4795 3.00952Z"
+                              fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.90746 9.66851L6.61627 13.7644C7.03289 13.7644 7.21333 13.5854 7.42971 13.3705L9.38301 11.5037L13.4304 14.4678C14.1727 14.8815 14.6957 14.6636 14.896 13.7849L17.5527 1.33599L17.5534 1.33526C17.7889 0.23795 17.1566 -0.191145 16.4334 0.078048L0.817245 6.05678C-0.248525 6.47047 -0.232388 7.0646 0.636072 7.33379L4.62849 8.5756L13.9021 2.77291C14.3385 2.48392 14.7353 2.64382 14.4089 2.93282L6.90746 9.66851Z"
+                              fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.2041 6.69191C16.8807 6.28346 16.9732 6.10174 17.2041 5.73664C17.2083 5.73247 19.8782 2.04308 20.1533 0.791893L20.1549 0.791059C20.2916 0.335096 20.1549 0 19.4939 0H17.3066C16.7498 0 16.4931 0.287582 16.3555 0.609341C16.3555 0.609341 15.2419 3.2751 13.6664 5.0031C13.1579 5.5024 12.9229 5.66245 12.6453 5.66245C12.5086 5.66245 12.296 5.50241 12.296 5.04644V0.791059C12.296 0.244236 12.1401 0 11.6792 0H8.23986C7.8906 0 7.68304 0.255073 7.68304 0.492641C7.68304 1.01112 8.47076 1.13032 8.55245 2.58907V5.75414C8.55245 6.44767 8.42658 6.57521 8.14734 6.57521C7.40379 6.57521 5.59911 3.89861 4.52964 0.835238C4.31374 0.240902 4.10285 0.000833511 3.54186 0.000833511H1.35373C0.729385 0.000833511 0.603516 0.288416 0.603516 0.610174C0.603516 1.17867 1.34706 4.00531 4.06117 7.73971C5.87002 10.2888 8.41742 11.67 10.7347 11.67C12.1276 11.67 12.2977 11.3632 12.2977 10.8356C12.2977 8.3999 12.1718 8.16983 12.8695 8.16983C13.1929 8.16983 13.7498 8.32988 15.0501 9.5594C16.5364 11.0173 16.7806 11.67 17.6125 11.67H19.7998C20.4233 11.67 20.7393 11.3632 20.5576 10.7581C20.1416 9.48521 17.3308 6.86696 17.2041 6.69191Z"
+                              fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.3458 3.55373C17.059 3.04731 17.659 2.41519 18.1478 1.68735V1.68662C17.4953 1.97235 16.801 2.16235 16.0761 2.25442C16.8215 1.80938 17.3908 1.11004 17.6582 0.267461C16.9633 0.681808 16.1959 0.974115 15.3782 1.13781C14.7183 0.434808 13.7778 0 12.7518 0C10.7612 0 9.15864 1.61573 9.15864 3.59612C9.15864 3.88112 9.18276 4.15515 9.24195 4.41604C6.2531 4.26988 3.60772 2.83758 1.83049 0.654769C1.52064 1.19335 1.33795 1.80938 1.33795 2.47219C1.33795 3.71742 1.97884 4.82088 2.93541 5.46031C2.35737 5.44935 1.79103 5.28127 1.31091 5.01746V5.05692C1.31091 6.80419 2.55687 8.2555 4.19161 8.59019C3.89857 8.67058 3.57995 8.70858 3.24891 8.70858C3.01872 8.70858 2.78634 8.69542 2.56857 8.64719C3.03407 10.0707 4.35676 11.1179 5.92791 11.1523C4.70461 12.1088 3.15099 12.6854 1.46949 12.6854C1.17499 12.6854 0.892183 12.6723 0.609375 12.6365C2.20245 13.6632 4.0893 14.25 6.12522 14.25C12.4705 14.25 16.6059 8.95631 16.3458 3.55373Z"
+                              fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.83594 5.15625V3.28125C4.83594 2.76375 5.25594 2.34375 5.77344 2.34375H6.71094V0H4.83594C3.2825 0 2.02344 1.25906 2.02344 2.8125V5.15625H0.148438V7.5H2.02344V15H4.83594V7.5H6.71094L7.64844 5.15625H4.83594Z"
+                              fill="black"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>

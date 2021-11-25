@@ -1,161 +1,175 @@
 body
-	font-family: ProstoOne
+  font-family: ProstoOne
 
 body.lock
-	overflow: hidden
+  overflow: hidden
+
+body
+  //overflow-x: hidden
+
+a
+  color: #000
+
+a:hover
+  color: #aca494
+
+svg:hover path
+  fill: #aca494
 
 .custom-container
-	max-width: 1600px
-	margin: 0 auto
-	padding: 0 15px
-	font-family: 'ProstoOne'
+  max-width: 1600px
+  margin: 0 auto
+  padding: 0 15px
+  font-family: 'ProstoOne'
 
 .little-container
-	max-width: 1230px
-	margin: 0 auto
-	padding: 0 15px
+  max-width: 1230px
+  margin: 0 auto
+  padding: 0 15px
 
 .article-container
-	max-width: 820px
-	margin: 0 auto
-	padding: 0 10px
+  max-width: 820px
+  margin: 0 auto
+  padding: 0 10px
 
 .section-title
-	letter-spacing: 0.01em
-	font-size: 32px
-	line-height: 40px
-	margin-bottom: 50px
+  letter-spacing: 0.01em
+  font-size: 32px
+  line-height: 40px
 
 .title
-	font-size: 18px
-	line-height: 22px
-	letter-spacing: 0.01em
-	max-width: 380px
-	padding-bottom: 15px
-	word-wrap: break-word
-	overflow: hidden
-	max-height: 110px
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: 0.01em
+  max-width: 380px
+  padding-bottom: 15px
+  word-wrap: break-word
+  overflow: hidden
+  max-height: 110px
 
 .name
-	margin-bottom: 17px
-	margin-top: 20px
-	font-size: 18px
-	line-height: 22px
-	text-align: center
-	letter-spacing: 0.01em
-	max-width: 390px
+  margin-bottom: 17px
+  margin-top: 20px
+  font-size: 18px
+  line-height: 22px
+  text-align: center
+  letter-spacing: 0.01em
+  max-width: 390px
 
 .more
-	max-width: 40px
-	text-decoration: underline
-	font-size: 16px
-	line-height: 20px
-	margin: 0 auto
+  max-width: 40px
+  text-decoration: underline
+  font-size: 16px
+  line-height: 20px
+  margin: 70px auto 0 auto
 
 .date
-	margin-left: 30px
-	color: #ADADAD
+  margin-left: 30px
+  color: #ADADAD
 
 .category
-	font-size: 12px
-	line-height: 15px
-	color: #FD561F
-	letter-spacing: 0.01em
-	margin-bottom: 15px
-	margin-top: 20px
+  font-size: 12px
+  line-height: 15px
+  color: #FD561F
+  letter-spacing: 0.01em
+  margin-bottom: 15px
+  margin-top: 20px
 
 .tag
-	font-size: 16px
-	line-height: 20px
-	color: #FD561F
-	letter-spacing: 0.01em
+  font-size: 16px
+  line-height: 20px
+  color: #FD561F
+  letter-spacing: 0.01em
 
 .tags
 
-	&__list
-		display: flex
-		justify-content: center
-		flex-wrap: wrap
+  &__list
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
 
-		&-item + .tags__list-item
-			margin-left: 30px
+    &-item + .tags__list-item
+      margin-left: 30px
 
 .author
-	color: #FFF
-	font-family: 'Garamond Pro'
-	font-size: 14px
-	line-height: 17px
-	letter-spacing: 0.01em
-	position: relative
+  color: #FFF
+  font-family: 'Garamond Pro'
+  font-size: 14px
+  line-height: 17px
+  letter-spacing: 0.01em
+  position: relative
 
 .author::before
-	content: ''
-	width: 5px
-	height: 5px
-	background-color: #2FC41A
-	position: absolute
-	bottom: 5px
-	left: -25px
-	right: 0
+  content: ''
+  width: 5px
+  height: 5px
+  background-color: #2FC41A
+  position: absolute
+  bottom: 5px
+  left: -25px
+  right: 0
 
 .author::after
-	content: ''
-	width: 5px
-	height: 5px
-	background-color: #2FC41A
-	position: absolute
-	bottom: 5px
-	left: -15px
-	right: 0
+  content: ''
+  width: 5px
+  height: 5px
+  background-color: #2FC41A
+  position: absolute
+  bottom: 5px
+  left: -15px
+  right: 0
 
 .section-link
-	margin-left: auto
-	& a
-		font-size: 14px
-		line-height: 17px
-		letter-spacing: 0.01em
-		text-decoration: underline
-		color: #000
+  margin-left: auto
+
+  & a
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.01em
+    text-decoration: underline
 
 .slick-btn
-	position: absolute
-	height: 10px
-	width: 30px
+  position: absolute
+  height: 10px
+  width: 30px
 
 .slider__counter
-	position: absolute
-	z-index: 10
-	color: #000
-	font-family: ProstoOne
-	font-size: 14px
-	line-height: 17px
-	letter-spacing: 0.01em
+  position: absolute
+  z-index: 10
+  color: #000
+  font-family: ProstoOne
+  font-size: 14px
+  line-height: 17px
+  letter-spacing: 0.01em
 
 
 .button
-	display: inline-block
-	line-height: 1
-	transition: all 0.25s
-	min-width: min-content
-	white-space: nowrap
-	transition: all .25s ease-in-out
-	&:focus
-		outline: none
-	&:hover
-		text-decoration: none
-	&_primary
-		&:hover
+  display: inline-block
+  line-height: 1
+  transition: all 0.25s
+  min-width: min-content
+  white-space: nowrap
+  transition: all .25s ease-in-out
 
-		&:active
+  &:focus
+    outline: none
 
-	&_secondary
-		&:hover
+  &:hover
+    text-decoration: none
 
-		&:active
+  &_primary
+    &:hover
 
-	&:disabled, 
-	&[disabled]
-		color: white !important
-		border-color: #d7d7d7 !important
-		background-color: #d7d7d7 !important
-		box-shadow: none
+    &:active
+
+  &_secondary
+    &:hover
+
+    &:active
+
+  &:disabled,
+  &[disabled]
+    color: white !important
+    border-color: #d7d7d7 !important
+    background-color: #d7d7d7 !important
+    box-shadow: none

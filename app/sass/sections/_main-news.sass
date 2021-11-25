@@ -1,7 +1,9 @@
 .main-news
   color: #fff
-  & .custom-container
-   display: flex
+  margin-bottom: 70px
+
+  &__body
+    display: flex
 
   & .slider__counter
     display: none
@@ -9,35 +11,58 @@
 .news
 
   &__big
-    background-image: url("../../img/main-news/news__big.png")
-    background-repeat: no-repeat
-    background-position: top center
-    background-size: cover
-    min-width: 995px
-    min-height: 600px
+    position: relative
 
-    &-container
+    &-image
+      height: 600px
+      max-height: 600px
+    &-image img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    &-information
+      position: absolute
       display: flex
       flex-direction: column
-      min-height: 600px
+      max-height: 600px
+      height: 600px
+      top: 0
+      left: 0
 
   &__little
-    min-width: 605px
 
-  &__little_first
-    background-image: url("../../img/main-news/news__little_first.png")
-    background-repeat: no-repeat
-    background-position: top center
-    background-size: cover
-    min-height: 300px
+    &-image
+      height: 300px
 
-  &__little_second
-    //filter: grayscale(100%)
-    background-image: url("../../img/main-news/news__little_second.png")
-    background-repeat: no-repeat
-    background-position: top center
-    background-size: cover
-    min-height: 300px
+    &-image img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    &_first
+      position: relative
+
+      & .news__little-information
+        position: absolute
+        display: flex
+        flex-direction: column
+        height: 300px
+        max-height: 300px
+        top: 0
+        left: 0
+
+    &_second
+      position: relative
+
+      & .news__little-information
+        position: absolute
+        display: flex
+        flex-direction: column
+        height: 300px
+        max-height: 300px
+        top: 0
+        left: 0
 
   &__category_big
     margin-top: 50px
@@ -52,9 +77,13 @@
     flex-direction: column
     justify-content: start
 
+  &__title-link
+    color: #fff
+
   &__title
 
     &_big
+      color: #fff
       font-size: 24px
       line-height: 30px
       max-width: 500px
@@ -62,6 +91,7 @@
       margin-top: auto
 
     &_little
+      overflow: hidden
       font-size: 19px
       line-height: 23px
       max-width: 325px
@@ -79,17 +109,10 @@
   margin: 15px 0 30px 56px
 
 @media only screen and (max-width: 1199px)
-  .main-news .custom-container
-    display: flex
-    padding: 0
-
   .news
-    &__little
-      min-width: 469px
+
     &__title_big
       margin-left: 60px
-    &__big
-      min-width: 730px
 
     &__category_big
       margin-left: 60px
@@ -119,7 +142,6 @@
       top: 615px
       left: 172px
 
-
 @media only screen and (max-width: 767px)
   .main-news
     & .slider__counter
@@ -132,10 +154,6 @@
       left: 74px
 
 @media only screen and (max-width: 575px)
-  .news
-
-    &__big
-      min-width: 570px
 
   .main-news
 
@@ -152,16 +170,22 @@
   .news
 
     &__big
-      min-width: 320px
-      min-height: 500px
+      &-image
+        height: 500px
 
-    &__big-container
-      justify-content: end
-      min-height: 500px
-      margin-left: 10px
+      &-information
+        justify-content: end
+        max-height: 500px
+        padding-left: 10px
 
     &__little
-      min-width: 320px
+      &-image
+        height: 300px
+
+      &-information
+        padding-left: 10px
+
+
 
     &__title
 
@@ -178,9 +202,8 @@
         margin-left: 0
 
     &__little_first, .news__little_second
-      min-height: 250px
-      padding-left: 10px
       justify-content: end
+      height: 250px
 
 
     &__category_big

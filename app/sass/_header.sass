@@ -36,12 +36,8 @@
 
 .login
   margin-left: auto
-  margin-right: 90px
 
-  &__list
-    padding-top: 74px
-
-    &-item
+  &__list-item
       display: inline-block
 
       & + .login__list-item
@@ -101,13 +97,9 @@
 
 @media only screen and (max-width: 1199px)
   .header
-
   .logo
     margin-right: 30px
     margin-left: 35px
-
-  .login
-    margin-right: 35px
 
   .login__list-item + .login__list-item
     margin-left: 30px
@@ -118,11 +110,6 @@
   .custom-container
     max-width: 1200px !important
 
-@media only screen and (max-width: 991px)
-  .header
-    & .custom-container
-      padding: 0
-
   .login
     position: relative
 
@@ -132,6 +119,8 @@
       position: relative
       display: block
       z-index: 41
+      margin-right: 60px
+      transition: transform 1s ease
 
     &__button span,
     &__button span::before,
@@ -141,6 +130,7 @@
       width: 25px
       height: 1px
       background-color: #000
+      transition: all .1s ease
 
     &__button span::before
       content: ''
@@ -161,6 +151,7 @@
       height: 100vh
       z-index: 40
       background-color: rgba(250, 240, 190)
+      padding-top: 74px
 
       &-item
         display: block
@@ -173,10 +164,10 @@
       box-shadow: 0 0 0 9999px rgba(0,0,0, 0.6)
 
     &__button.active
-      top: 63px
-      right: 7px
+      top: 66px
+      right: 30px
       position: fixed
-      transition: rotate 1s
+      transform: translateX(42px)
 
       & span::after
         transform: rotate(45deg)
@@ -188,17 +179,26 @@
       & span::before
         transform: rotate(-45deg)
 
+@media only screen and (max-width: 991px)
+  .header
+    &-top
+      flex-wrap: wrap
+
+      & .menu
+        order: 2
+        margin: 0 auto
+
+
 
 @media only screen and (max-width: 767px)
   .header
 
     &-top
-      flex-wrap: wrap
       padding-bottom: 35px
 
-  .menu
-    order: 2
-    margin: 0 auto
+    & .login__button.active
+      top: 56px
+      right: 28px
 
   .login__button.active
     top: 54px
@@ -208,6 +208,13 @@
 
     &-top
       padding-bottom: 25px
+
+    & .login__button
+      margin-right: 40px
+
+    & .login__button.active
+      top: 56px
+      right: 28px
 
   .menu
 
@@ -222,6 +229,13 @@
       padding-top: 20px
       padding-bottom: 30px
 
+    & .login__list
+      right: -115px
+      padding-left: 25px
+
+    & .login__button.active
+      top: 35px
+      right: 20px
   .menu
     font-size: 12px
     line-height: 15px
@@ -232,9 +246,4 @@
   .logo
     margin-left: 10px
 
-  .login__list
-    right: -115px
-    padding-left: 25px
 
-  .login__button.active
-    top: 34px

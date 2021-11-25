@@ -1,33 +1,42 @@
 .last-articles
-  margin-top: 70px
+  padding-bottom: 100px
 
   &__list
+    margin-top: 50px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
 
   &__item
-    max-width: 390px
     margin-bottom: 50px
 
+  &__image
+    position: relative
+    width: 100%
+    height: 500px
+
   &__image img
-    max-width: 390px
-    min-height: 500px
+    width: 100%
+    height: 100%
+    object-fit: cover
 
   &__author
     color: #000
     margin-left: 25px
 
   &__more
-    margin: 70px auto 100px auto
+    margin: 70px auto 0 auto
 
 .popular-articles
+  padding-bottom: 50px
 
   &-slider__counter
     display: none
 
+  &__title
+    max-width: 100%
+
 .all-articles
-  margin-bottom: 50px
 
   &__more
     max-width: 140px
@@ -48,85 +57,57 @@
   margin-left: 10px
 
 @media only screen and (max-width: 1199px)
-  .last-articles__item
-    max-width: 379px
+  .last-articles
 
-  .last-articles__image img
-    max-width: 379px
-
-  .last-articles__more
-    margin-bottom: 70px
 
 @media only screen and (max-width: 991px)
+  .last-articles
+
+    & .little-container
+      padding: 0 10px
+
+
+@media only screen and (max-width: 767px)
+  .last-articles
+
+
+@media only screen and (max-width: 575px)
   .last-articles
 
     &__list
       justify-content: space-around
 
-  .last-articles__item
-      max-width: 310px
+  .popular-articles
+    position: relative
 
-  .last-articles__image img
-    max-width: 310px
-    min-height: auto
+    &__title
+      max-height: 47px
 
-@media only screen and (max-width: 767px)
-  .last-articles
+    & .little-container
+      border-bottom: 1px solid
 
-    &__list
-      justify-content: space-between
+    &-slider__counter
+      display: initial
+      top: 767px
+      left: 155px
 
     &__item
-      max-width: 361px
+      padding-left: 10px
+      padding-right: 10px
+      margin-bottom: 30px
 
-    &__image img
-      max-width: 361px
+    & .slick-btn
+      top: 675px
 
-    &__more
-      margin-top: 50px
+    & .slick-prev
+      left: 18px
 
-  .popular-articles__information
-    max-width: 361px
-
-@media only screen and (max-width: 575px)
-    .last-articles
-
-      &__list
-        justify-content: space-around
-
-      &__more
-        margin-bottom: 70px
-
-    .popular-articles
-      position: relative
-
-      & .little-container
-        padding: 0
-        max-width: 555px
-        border-bottom: 1px solid
-
-      &-slider__counter
-        display: initial
-        top: 767px
-        left: 155px
-
-      &__item
-        max-width: 555px
-        display: flex !important
-        flex-direction: column
-        align-items: center
-
-      & .slick-btn
-        top: 675px
-
-      & .slick-prev
-        left: 18px
-
-      & .slick-next
-        left: 71px
+    & .slick-next
+      left: 71px
 
 @media only screen and (max-width: 320px)
   .last-articles
+    padding-bottom: 70px
 
     & .little-container
       padding: 0 10px
@@ -137,8 +118,8 @@
       margin-bottom: 30px
       margin-top: 96px
 
-    &__image img
-      max-width: 300px
+    &__image
+      max-height: 385px
 
     &__category
       margin-top: 10px
@@ -149,11 +130,13 @@
       line-height: 17px
       padding-bottom: 20px
 
+    &__more
+      margin-top: 0
+
   .popular-articles
 
     &__item
       margin-bottom: 30px
-      max-width: 361px !important
 
     &-slider__counter
       top: 680px

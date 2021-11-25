@@ -17,7 +17,6 @@
                 <span class="logo__title_first"> Hi</span>
                 News <span class="logo__title_second">ru</span>
             </div>
-
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
@@ -55,9 +54,50 @@
                         <a class="login__list-link" href="">Реклама</a>
                     </li>
                     <li class="login__list-item">
-                        <a class="login__list-link" href="">Войти</a>
+                        <a class="login__list-link link-modal" href="#login-modal-window">Войти</a>
+                    </li>
+                    <li class="login__list-item">
+                        <a class="login__list-link link-modal" href="#register-modal-window">Регистрация</a>
                     </li>
                 </ul>
+            </div>
+            <div class="modal-window" id="login-modal-window">
+                <div class="modal-window__body">
+                    <div class="modal-window__content">
+                        <a href="" class="modal-window__close">X</a>
+                        <div class="modal-window__title">Login form</div>
+                        <form>
+                            <div class="modal-window__label"><label for="login">login</label></div>
+                            <div class="modal-window__input"><input type="text" id="login"></div>
+                            <div class="modal-window__label"><label for="password">password</label></div>
+                            <div class="modal-window__input"><input type="password" id="password"></div>
+                        </form>
+                        <div class="modal-window__message">
+                            If u are not registered, welcome ->
+                            <a href="#register-modal-window" class="link-modal">Register form link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-window" id="register-modal-window">
+                <div class="modal-window__body">
+                    <div class="modal-window__content">
+                        <a href="" class="modal-window__close">X</a>
+                        <div class="modal-window__title">Register form</div>
+                        <form>
+                            <div class="modal-window__label"><label for="register">login</label></div>
+                            <div class="modal-window__input"><input type="text" id="register"></div>
+                            <div class="modal-window__label"><label for="password">password</label></div>
+                            <div class="modal-window__input"><input type="password" id="password"></div>
+                            <div class="modal-window__label"><label for="againPassword">Again password</label></div>
+                            <div class="modal-window__input"><input type="password" id="againPassword"></div>
+                        </form>
+                        <div class="modal-window__message">
+                            If u are already registered, welcome ->
+                            <a href="#login-modal-window" class="link-modal">Login form link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -111,7 +151,7 @@
             </div>
         </div>
     </div>
-    <div class="custom-container">
+    <div class="container-fluid">
         <div class="article__image">
             <img src="img/article/article-1.png" alt="">
         </div>
@@ -126,20 +166,40 @@
             </div>
             <div class="description-share__social">
                 <div class="description-share__image">
-                    <a href="#" class="footer__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2041 6.69191C16.8807 6.28346 16.9732 6.10174 17.2041 5.73664C17.2083 5.73247 19.8782 2.04308 20.1533 0.791893L20.1549 0.791059C20.2916 0.335096 20.1549 0 19.4939 0H17.3066C16.7498 0 16.4931 0.287582 16.3555 0.609341C16.3555 0.609341 15.2419 3.2751 13.6664 5.0031C13.1579 5.5024 12.9229 5.66245 12.6453 5.66245C12.5086 5.66245 12.296 5.50241 12.296 5.04644V0.791059C12.296 0.244236 12.1401 0 11.6792 0H8.23986C7.8906 0 7.68304 0.255073 7.68304 0.492641C7.68304 1.01112 8.47076 1.13032 8.55245 2.58907V5.75414C8.55245 6.44767 8.42658 6.57521 8.14734 6.57521C7.40379 6.57521 5.59911 3.89861 4.52964 0.835238C4.31374 0.240902 4.10285 0.000833511 3.54186 0.000833511H1.35373C0.729385 0.000833511 0.603516 0.288416 0.603516 0.610174C0.603516 1.17867 1.34706 4.00531 4.06117 7.73971C5.87002 10.2888 8.41742 11.67 10.7347 11.67C12.1276 11.67 12.2977 11.3632 12.2977 10.8356C12.2977 8.3999 12.1718 8.16983 12.8695 8.16983C13.1929 8.16983 13.7498 8.32988 15.0501 9.5594C16.5364 11.0173 16.7806 11.67 17.6125 11.67H19.7998C20.4233 11.67 20.7393 11.3632 20.5576 10.7581C20.1416 9.48521 17.3308 6.86696 17.2041 6.69191Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="footer__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.83594 5.15625V3.28125C4.83594 2.76375 5.25594 2.34375 5.77344 2.34375H6.71094V0H4.83594C3.2825 0 2.02344 1.25906 2.02344 2.8125V5.15625H0.148438V7.5H2.02344V15H4.83594V7.5H6.71094L7.64844 5.15625H4.83594Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="footer__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.3458 3.55373C17.059 3.04731 17.659 2.41519 18.1478 1.68735V1.68662C17.4953 1.97235 16.801 2.16235 16.0761 2.25442C16.8215 1.80938 17.3908 1.11004 17.6582 0.267461C16.9633 0.681808 16.1959 0.974115 15.3782 1.13781C14.7183 0.434808 13.7778 0 12.7518 0C10.7612 0 9.15864 1.61573 9.15864 3.59612C9.15864 3.88112 9.18276 4.15515 9.24195 4.41604C6.2531 4.26988 3.60772 2.83758 1.83049 0.654769C1.52064 1.19335 1.33795 1.80938 1.33795 2.47219C1.33795 3.71742 1.97884 4.82088 2.93541 5.46031C2.35737 5.44935 1.79103 5.28127 1.31091 5.01746V5.05692C1.31091 6.80419 2.55687 8.2555 4.19161 8.59019C3.89857 8.67058 3.57995 8.70858 3.24891 8.70858C3.01872 8.70858 2.78634 8.69542 2.56857 8.64719C3.03407 10.0707 4.35676 11.1179 5.92791 11.1523C4.70461 12.1088 3.15099 12.6854 1.46949 12.6854C1.17499 12.6854 0.892183 12.6723 0.609375 12.6365C2.20245 13.6632 4.0893 14.25 6.12522 14.25C12.4705 14.25 16.6059 8.95631 16.3458 3.55373Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="footer__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.90746 9.66851L6.61627 13.7644C7.03289 13.7644 7.21333 13.5854 7.42971 13.3705L9.38301 11.5037L13.4304 14.4678C14.1727 14.8815 14.6957 14.6636 14.896 13.7849L17.5527 1.33599L17.5534 1.33526C17.7889 0.23795 17.1566 -0.191145 16.4334 0.078048L0.817245 6.05678C-0.248525 6.47047 -0.232388 7.0646 0.636072 7.33379L4.62849 8.5756L13.9021 2.77291C14.3385 2.48392 14.7353 2.64382 14.4089 2.93282L6.90746 9.66851Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="description-share__save">
-                <a href="#" class="description-share__save-link"><img src="img/others/others-save.svg" alt=""></a>
+                <a href="#" class="description-share__save-link">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8388 0H1.25945C0.565 0 0 0.5085 0 1.13351V17.3199C0 17.5666 0.148359 17.7937 0.387656 17.9139C0.502265 17.9715 0.628984 18 0.755664 18C0.893711 18 1.03125 17.9662 1.15289 17.8987L6.55062 14.8994L11.9476 17.8769C12.1809 18.0059 12.4733 18.0111 12.7118 17.8905C12.9504 17.7704 13.0982 17.5435 13.0982 17.2973V1.13351C13.0982 0.5085 12.5333 0 11.8388 0ZM11.5869 16.0823L6.94434 13.5208C6.70102 13.3867 6.39473 13.3873 6.15215 13.522L1.51133 16.1007V1.3602H11.5869V16.0823Z" fill="black"/>
+                    </svg>
+                </a>
                 В закладки</div>
         </div>
         <div class="description-interesting">
@@ -157,12 +217,16 @@
             этих вида очень похожи и при скрещивании дают здоровое потомство без каких-либо отклонений в развитии. Если
             бы между ними не было родственной связи, цыплята родились бы как минимум нездоровыми.
         </div>
-        <div class="description__image">
-            <img src="img/description/description-1.png" alt="">
+        <div class="description__image-body">
+            <div class="description__image">
+                <img src="img/description/description-1.png" alt="">
+            </div>
             <div class="description__image-under">
                 Так выглядит банкивская джунглевая курица
             </div>
         </div>
+
+
         <div class="description__text">
             Ученые уже почти уверены, что домашние птицы произошли от живущих в джунглях птиц. Только вот определить,
             где именно были одомашнены курицы, было очень сложно. Дело в том, что банкивские курицы с очень давних
@@ -220,9 +284,12 @@
             с трудом. А все потому, что даже рис начал выращиваться 9 000 лет назад. <span>Так что предположение, что домашние
             курицы возникли 7500 лет назад, звучит более правдоподобно.</span>
         </div>
-        <div class="description__image">
-            <img src="img/description/description-2.png" alt="">
+        <div class="description__image-body">
+            <div class="description__image">
+                <img src="img/description/description-2.png" alt="">
+            </div>
         </div>
+
         <div class="description__text">
             На сегодняшний день существует очень много разновидностей кур, которые различаются между собой окраской и
             особенностями разведения.
@@ -238,8 +305,10 @@
             обладают необычным внешним видом с пышными «бакенбардами» и, скорее, относятся к декоративным видам. Их
             яйцами особо не насытишься, потому что они маленьки и в год их появляется только по 170-180 штук.
         </div>
-        <div class="description__image">
-            <img src="img/description/description-3.png" alt="">
+        <div class="description__image-body">
+            <div class="description__image">
+                <img src="img/description/description-3.png" alt="">
+            </div>
             <div class="description__image-under">
                 Так выглядят курицы породы араукана
                 <span>Источник: https://www.thehappychickencoop.com/</span>
@@ -251,10 +320,15 @@
             примерно 66 миллионов лет назад, во времена динозавров. Считаю, что это очень интересная тема для изучения,
             поэтому рекомендую заняться чтением прямо сейчас!
         </div>
-        <div class="description__image description__image_little">
-            <img src="img/description/description-4.png" alt="">
-            <img src="img/description/description-5.png" alt="">
+        <div class="description__image-body row">
+            <div class="description__image_little col-12 col-md-6">
+                <img src="img/description/description-4.png" alt="">
+            </div>
+            <div class="description__image_little col-12 col-md-6">
+                <img src="img/description/description-5.png" alt="">
+            </div>
         </div>
+
         <div class="description__question">
             <div class="description__question-text">
                 А вы знаете, <a href="" class="description__question-link">что возникло раньше: яйцо или курица?</a>
@@ -286,9 +360,9 @@
 
         <div class="description__category">
             <ul class="description__category-items">
-                <li class="description__category-item">Это интересно</li>
-                <li class="description__category-item">Генетика</li>
-                <li class="description__category-item">Животные Земли</li>
+                <li class="description__category-item"><a href="">Это интересно</a></li>
+                <li class="description__category-item"><a href="">Генетика</a></li>
+                <li class="description__category-item"><a href="">Животные Земли</a></li>
             </ul>
         </div>
         <div class="description-share description-share-bottom">
@@ -297,25 +371,42 @@
             </div>
             <div class="description-share__social">
                 <div class="description-share__image">
-                    <a href="#" class="description-share__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+                    <a href="#" class="description-share__social-link">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2041 6.69191C16.8807 6.28346 16.9732 6.10174 17.2041 5.73664C17.2083 5.73247 19.8782 2.04308 20.1533 0.791893L20.1549 0.791059C20.2916 0.335096 20.1549 0 19.4939 0H17.3066C16.7498 0 16.4931 0.287582 16.3555 0.609341C16.3555 0.609341 15.2419 3.2751 13.6664 5.0031C13.1579 5.5024 12.9229 5.66245 12.6453 5.66245C12.5086 5.66245 12.296 5.50241 12.296 5.04644V0.791059C12.296 0.244236 12.1401 0 11.6792 0H8.23986C7.8906 0 7.68304 0.255073 7.68304 0.492641C7.68304 1.01112 8.47076 1.13032 8.55245 2.58907V5.75414C8.55245 6.44767 8.42658 6.57521 8.14734 6.57521C7.40379 6.57521 5.59911 3.89861 4.52964 0.835238C4.31374 0.240902 4.10285 0.000833511 3.54186 0.000833511H1.35373C0.729385 0.000833511 0.603516 0.288416 0.603516 0.610174C0.603516 1.17867 1.34706 4.00531 4.06117 7.73971C5.87002 10.2888 8.41742 11.67 10.7347 11.67C12.1276 11.67 12.2977 11.3632 12.2977 10.8356C12.2977 8.3999 12.1718 8.16983 12.8695 8.16983C13.1929 8.16983 13.7498 8.32988 15.0501 9.5594C16.5364 11.0173 16.7806 11.67 17.6125 11.67H19.7998C20.4233 11.67 20.7393 11.3632 20.5576 10.7581C20.1416 9.48521 17.3308 6.86696 17.2041 6.69191Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="description-share__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+                    <a href="#" class="description-share__social-link">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.83594 5.15625V3.28125C4.83594 2.76375 5.25594 2.34375 5.77344 2.34375H6.71094V0H4.83594C3.2825 0 2.02344 1.25906 2.02344 2.8125V5.15625H0.148438V7.5H2.02344V15H4.83594V7.5H6.71094L7.64844 5.15625H4.83594Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="description-share__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+                    <a href="#" class="description-share__social-link">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.3458 3.55373C17.059 3.04731 17.659 2.41519 18.1478 1.68735V1.68662C17.4953 1.97235 16.801 2.16235 16.0761 2.25442C16.8215 1.80938 17.3908 1.11004 17.6582 0.267461C16.9633 0.681808 16.1959 0.974115 15.3782 1.13781C14.7183 0.434808 13.7778 0 12.7518 0C10.7612 0 9.15864 1.61573 9.15864 3.59612C9.15864 3.88112 9.18276 4.15515 9.24195 4.41604C6.2531 4.26988 3.60772 2.83758 1.83049 0.654769C1.52064 1.19335 1.33795 1.80938 1.33795 2.47219C1.33795 3.71742 1.97884 4.82088 2.93541 5.46031C2.35737 5.44935 1.79103 5.28127 1.31091 5.01746V5.05692C1.31091 6.80419 2.55687 8.2555 4.19161 8.59019C3.89857 8.67058 3.57995 8.70858 3.24891 8.70858C3.01872 8.70858 2.78634 8.69542 2.56857 8.64719C3.03407 10.0707 4.35676 11.1179 5.92791 11.1523C4.70461 12.1088 3.15099 12.6854 1.46949 12.6854C1.17499 12.6854 0.892183 12.6723 0.609375 12.6365C2.20245 13.6632 4.0893 14.25 6.12522 14.25C12.4705 14.25 16.6059 8.95631 16.3458 3.55373Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="description-share__image">
-                    <a href="#" class="description-share__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+                    <a href="#" class="description-share__social-link">
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.90746 9.66851L6.61627 13.7644C7.03289 13.7644 7.21333 13.5854 7.42971 13.3705L9.38301 11.5037L13.4304 14.4678C14.1727 14.8815 14.6957 14.6636 14.896 13.7849L17.5527 1.33599L17.5534 1.33526C17.7889 0.23795 17.1566 -0.191145 16.4334 0.078048L0.817245 6.05678C-0.248525 6.47047 -0.232388 7.0646 0.636072 7.33379L4.62849 8.5756L13.9021 2.77291C14.3385 2.48392 14.7353 2.64382 14.4089 2.93282L6.90746 9.66851Z" fill="black"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="description-share__save">
-                <a href="#" class="description-share__save-link"><img src="img/others/others-save.svg" alt=""></a>
+                <a href="#" class="description-share__save-link">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8388 0H1.25945C0.565 0 0 0.5085 0 1.13351V17.3199C0 17.5666 0.148359 17.7937 0.387656 17.9139C0.502265 17.9715 0.628984 18 0.755664 18C0.893711 18 1.03125 17.9662 1.15289 17.8987L6.55062 14.8994L11.9476 17.8769C12.1809 18.0059 12.4733 18.0111 12.7118 17.8905C12.9504 17.7704 13.0982 17.5435 13.0982 17.2973V1.13351C13.0982 0.5085 12.5333 0 11.8388 0ZM11.5869 16.0823L6.94434 13.5208C6.70102 13.3867 6.39473 13.3873 6.15215 13.522L1.51133 16.1007V1.3602H11.5869V16.0823Z" fill="black"/>
+                    </svg>
+                </a>
                 В закладки</div>
         </div>
-
-
-
     </div>
 </section>
 
@@ -324,8 +415,8 @@
         <div class="partners-news__logo partners-news-article__logo section-title">
             Высший разум рекомендует:
         </div>
-        <div class="partners-news__list">
-            <div class="partners-news__item">
+        <div class="partners-news__list row">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-5.png" alt="">
                 </div>
@@ -334,7 +425,7 @@
                         Наука
                     </div>
                     <div class="partners-news__title">
-                        Если люди такие умные, то почему мозг становится меньше?
+                        <a href="" class="partners-news__title-link">Если люди такие умные, то почему мозг становится меньше?</a>
                     </div>
                     <div class="partners-news__author author">
                         Любовь Соковикова
@@ -343,7 +434,7 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-6.png" alt="">
                 </div>
@@ -352,7 +443,7 @@
                         Это интересно
                     </div>
                     <div class="partners-news__title">
-                        Google тестирует новый Chrome, который меньше нагружает аккумулятор Mac
+                        <a href="" class="partners-news__title-link">Google тестирует новый Chrome, который меньше нагружает аккумулятор Mac</a>
                     </div>
                     <div class="partners-news__author author">
                         Александр Богданов
@@ -361,7 +452,7 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-7.png" alt="">
                 </div>
@@ -370,7 +461,7 @@
                         Это интересно
                     </div>
                     <div class="partners-news__title">
-                        Павел Дуров призвал бороться с Apple и похвалил закон о российском софте
+                        <a href="" class="partners-news__title-link">Павел Дуров призвал бороться с Apple и похвалил закон о российском софте</a>
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -379,7 +470,7 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-8.png" alt="">
                 </div>
@@ -388,7 +479,7 @@
                         Технологии
                     </div>
                     <div class="partners-news__title">
-                        Как Apple Watch смогут предотвращать анемию, астму и другие заболевания
+                        <a href="" class="partners-news__title-link">Как Apple Watch смогут предотвращать анемию, астму и другие заболевания</a>
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -413,17 +504,28 @@
         <div class="partners-news__logo section-title">
             Новости партнеров:
         </div>
-        <div class="partners-news__list">
-            <div class="partners-news__item">
+        <div class="partners-news__list row">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-1.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="14" height="14" fill="url(#pattern0)"/>
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_1_650" transform="scale(0.0131579)"/>
+                                    </pattern>
+                                    <image id="image0_1_650" width="76" height="76" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                        </div>
                         Смартфоны
                     </div>
                     <div class="partners-news__title">
-                        Три недели с Samsung Galaxy S20 Ultra — стоит ли он своих денег?
+                        <a href="" class="partners-news__title-link">Три недели с Samsung Galaxy S20 Ultra — стоит ли он своих денег?</a>
                     </div>
                     <div class="partners-news__author author">
                         Артем Сутягин
@@ -432,16 +534,22 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-2.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         OS X
                     </div>
                     <div class="partners-news__title">
-                        Google тестирует новый Chrome, который меньше нагружает аккумулятор Mac
+                        <a href="" class="partners-news__title-link">Google тестирует новый Chrome, который меньше нагружает аккумулятор Mac</a>
                     </div>
                     <div class="partners-news__author author">
                         Александр Богданов
@@ -450,16 +558,22 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-3.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         Суды и скандалы
                     </div>
                     <div class="partners-news__title">
-                        Павел Дуров призвал бороться с Apple и похвалил закон о российском софте
+                        <a href="" class="partners-news__title-link">Павел Дуров призвал бороться с Apple и похвалил закон о российском софте</a>
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -468,16 +582,22 @@
                 </div>
             </div>
 
-            <div class="partners-news__item">
+            <div class="partners-news__item col-12 col-md-6">
                 <div class="partners-news__image">
                     <img src="img/partners-news/partners-news-4.png" alt="">
                 </div>
                 <div class="partners-news__information">
                     <div class="partners-news__category">
+                        <div class="partners-news__category-image">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6.5" fill="#2FC31A"/>
+                                <circle cx="6.5" cy="6.5" r="2.5" fill="white"/>
+                            </svg>
+                        </div>
                         Аксессуары
                     </div>
                     <div class="partners-news__title">
-                        Как Apple Watch смогут предотвращать анемию, астму и другие заболевания
+                        <a href="" class="partners-news__title-link">Как Apple Watch смогут предотвращать анемию, астму и другие заболевания</a>
                     </div>
                     <div class="partners-news__author author">
                         Иван Кузнецов
@@ -535,19 +655,41 @@
         </nav>
         <div class="footer__social">
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-instagram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6689 0H4.33105C1.94287 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.94287 16 4.33105 16H11.669C14.0571 16 16 14.0571 16 11.669V4.33105C16 1.94287 14.0571 0 11.6689 0V0ZM7.99998 12.3749C5.58764 12.3749 3.62512 10.4123 3.62512 7.99998C3.62512 5.58764 5.58764 3.62512 7.99998 3.62512C10.4123 3.62512 12.3749 5.58764 12.3749 7.99998C12.3749 10.4123 10.4123 12.3749 7.99998 12.3749ZM12.4795 4.65685C11.7666 4.65685 11.1867 4.07702 11.1867 3.36413C11.1867 2.65124 11.7666 2.07129 12.4795 2.07129C13.1924 2.07129 13.7723 2.65124 13.7723 3.36413C13.7723 4.07702 13.1924 4.65685 12.4795 4.65685Z" fill="black"/>
+                        <path d="M8.00012 4.56299C6.1051 4.56299 4.56323 6.10473 4.56323 7.99987C4.56323 9.89489 6.1051 11.4368 8.00012 11.4368C9.89525 11.4368 11.437 9.89489 11.437 7.99987C11.437 6.10473 9.89525 4.56299 8.00012 4.56299Z" fill="black"/>
+                        <path d="M12.4795 3.00952C12.2839 3.00952 12.1248 3.1687 12.1248 3.36426C12.1248 3.55981 12.2839 3.71899 12.4795 3.71899C12.6752 3.71899 12.8343 3.55994 12.8343 3.36426C12.8343 3.16858 12.6752 3.00952 12.4795 3.00952Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.90746 9.66851L6.61627 13.7644C7.03289 13.7644 7.21333 13.5854 7.42971 13.3705L9.38301 11.5037L13.4304 14.4678C14.1727 14.8815 14.6957 14.6636 14.896 13.7849L17.5527 1.33599L17.5534 1.33526C17.7889 0.23795 17.1566 -0.191145 16.4334 0.078048L0.817245 6.05678C-0.248525 6.47047 -0.232388 7.0646 0.636072 7.33379L4.62849 8.5756L13.9021 2.77291C14.3385 2.48392 14.7353 2.64382 14.4089 2.93282L6.90746 9.66851Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.2041 6.69191C16.8807 6.28346 16.9732 6.10174 17.2041 5.73664C17.2083 5.73247 19.8782 2.04308 20.1533 0.791893L20.1549 0.791059C20.2916 0.335096 20.1549 0 19.4939 0H17.3066C16.7498 0 16.4931 0.287582 16.3555 0.609341C16.3555 0.609341 15.2419 3.2751 13.6664 5.0031C13.1579 5.5024 12.9229 5.66245 12.6453 5.66245C12.5086 5.66245 12.296 5.50241 12.296 5.04644V0.791059C12.296 0.244236 12.1401 0 11.6792 0H8.23986C7.8906 0 7.68304 0.255073 7.68304 0.492641C7.68304 1.01112 8.47076 1.13032 8.55245 2.58907V5.75414C8.55245 6.44767 8.42658 6.57521 8.14734 6.57521C7.40379 6.57521 5.59911 3.89861 4.52964 0.835238C4.31374 0.240902 4.10285 0.000833511 3.54186 0.000833511H1.35373C0.729385 0.000833511 0.603516 0.288416 0.603516 0.610174C0.603516 1.17867 1.34706 4.00531 4.06117 7.73971C5.87002 10.2888 8.41742 11.67 10.7347 11.67C12.1276 11.67 12.2977 11.3632 12.2977 10.8356C12.2977 8.3999 12.1718 8.16983 12.8695 8.16983C13.1929 8.16983 13.7498 8.32988 15.0501 9.5594C16.5364 11.0173 16.7806 11.67 17.6125 11.67H19.7998C20.4233 11.67 20.7393 11.3632 20.5576 10.7581C20.1416 9.48521 17.3308 6.86696 17.2041 6.69191Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.3458 3.55373C17.059 3.04731 17.659 2.41519 18.1478 1.68735V1.68662C17.4953 1.97235 16.801 2.16235 16.0761 2.25442C16.8215 1.80938 17.3908 1.11004 17.6582 0.267461C16.9633 0.681808 16.1959 0.974115 15.3782 1.13781C14.7183 0.434808 13.7778 0 12.7518 0C10.7612 0 9.15864 1.61573 9.15864 3.59612C9.15864 3.88112 9.18276 4.15515 9.24195 4.41604C6.2531 4.26988 3.60772 2.83758 1.83049 0.654769C1.52064 1.19335 1.33795 1.80938 1.33795 2.47219C1.33795 3.71742 1.97884 4.82088 2.93541 5.46031C2.35737 5.44935 1.79103 5.28127 1.31091 5.01746V5.05692C1.31091 6.80419 2.55687 8.2555 4.19161 8.59019C3.89857 8.67058 3.57995 8.70858 3.24891 8.70858C3.01872 8.70858 2.78634 8.69542 2.56857 8.64719C3.03407 10.0707 4.35676 11.1179 5.92791 11.1523C4.70461 12.1088 3.15099 12.6854 1.46949 12.6854C1.17499 12.6854 0.892183 12.6723 0.609375 12.6365C2.20245 13.6632 4.0893 14.25 6.12522 14.25C12.4705 14.25 16.6059 8.95631 16.3458 3.55373Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.83594 5.15625V3.28125C4.83594 2.76375 5.25594 2.34375 5.77344 2.34375H6.71094V0H4.83594C3.2825 0 2.02344 1.25906 2.02344 2.8125V5.15625H0.148438V7.5H2.02344V15H4.83594V7.5H6.71094L7.64844 5.15625H4.83594Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -556,6 +698,7 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/config-slider.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

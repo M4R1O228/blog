@@ -55,9 +55,50 @@
                         <a class="login__list-link" href="">Реклама</a>
                     </li>
                     <li class="login__list-item">
-                        <a class="login__list-link" href="">Войти</a>
+                        <a class="login__list-link link-modal" href="#login-modal-window">Войти</a>
+                    </li>
+                    <li class="login__list-item">
+                        <a class="login__list-link link-modal" href="#register-modal-window">Регистрация</a>
                     </li>
                 </ul>
+            </div>
+            <div class="modal-window" id="login-modal-window">
+                <div class="modal-window__body">
+                    <div class="modal-window__content">
+                        <a href="" class="modal-window__close">X</a>
+                        <div class="modal-window__title">Login form</div>
+                        <form>
+                            <div class="modal-window__label"><label for="login">login</label></div>
+                            <div class="modal-window__input"><input type="text" id="login"></div>
+                            <div class="modal-window__label"><label for="password">password</label></div>
+                            <div class="modal-window__input"><input type="password" id="password"></div>
+                        </form>
+                        <div class="modal-window__message">
+                            If u are not registered, welcome ->
+                            <a href="#register-modal-window" class="link-modal">Register form link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-window" id="register-modal-window">
+                <div class="modal-window__body">
+                    <div class="modal-window__content">
+                        <a href="" class="modal-window__close">X</a>
+                        <div class="modal-window__title">Register form</div>
+                        <form>
+                            <div class="modal-window__label"><label for="register">login</label></div>
+                            <div class="modal-window__input"><input type="text" id="register"></div>
+                            <div class="modal-window__label"><label for="password">password</label></div>
+                            <div class="modal-window__input"><input type="password" id="password"></div>
+                            <div class="modal-window__label"><label for="againPassword">Again password</label></div>
+                            <div class="modal-window__input"><input type="password" id="againPassword"></div>
+                        </form>
+                        <div class="modal-window__message">
+                            If u are already registered, welcome ->
+                            <a href="#login-modal-window" class="link-modal">Login form link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -65,8 +106,8 @@
 
 <section class="category-articles">
     <div class="little-container">
-        <div class=" category-articles__list">
-            <div class=" category-articles__item">
+        <div class=" category-articles__list row">
+            <div class=" category-articles__item col-12 col-md-4 col-sm-6">
                 <div class="category-articles__image">
                     <img src="img/category-articles/category-articles-1.png" alt="">
                 </div>
@@ -75,14 +116,14 @@
                     <span class="category-articles__date date">27.06.2020</span>
                 </div>
                 <div class="category-articles__title title">
-                    Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                    <a href="#" class="category-articles__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                 </div>
                 <div class="author category-articles__author">
                     Николай Хижняк
                 </div>
             </div>
 
-            <div class="category-articles__item">
+            <div class="category-articles__item col-12 col-md-4 col-sm-6">
                 <div class="category-articles__image">
                     <img src="img/category-articles/category-articles-2.png" alt="">
                 </div>
@@ -91,14 +132,14 @@
                     <span class="category-articles__date date">30.06.2020</span>
                 </div>
                 <div class="category-articles__title title">
-                    В какой туалет будут ходить будущие жители Луны?
+                    <a href="#" class="category-articles__title-link">В какой туалет будут ходить будущие жители Луны?</a>
                 </div>
                 <div class="author category-articles__author">
                     Рамис Ганиев
                 </div>
             </div>
 
-            <div class="category-articles__item">
+            <div class="category-articles__item col-12 col-md-4 col-sm-6">
                 <div class="category-articles__image">
                     <img src="img/category-articles/category-articles-3.png" alt="">
                 </div>
@@ -107,7 +148,7 @@
                     <span class="category-articles__date date">27.06.2020</span>
                 </div>
                 <div class="category-articles__title title">
-                    NASA показало 10 лет из жизни Солнца на одном видео
+                    <a href="#" class="category-articles__title-link">NASA показало 10 лет из жизни Солнца на одном видео</a>
                 </div>
                 <div class="author category-articles__author">
                     Рамис Ганиев
@@ -118,7 +159,7 @@
 </section>
 
 <section class="popular-tags">
-    <div class="little-container">
+    <div class="container-xl">
 
         <div class="popular-tags__header">
             <div class="popular-tags__title section-title">
@@ -126,37 +167,45 @@
             </div>
         </div>
 
-        <div class="popular-tags__list popular-tags__slider">
-            <div class="popular-tags__item">
+        <div class="popular-tags__list row popular-tags__slider">
+            <div class="popular-tags__item col-12 col-sm-4">
                 <div class="popular-tags__image">
                     <img src="img/popular-tags/popular-tags-1.png" alt="">
                 </div>
-                <div class="popular-tags__category category">Исследования</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">Исследования</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item">
+            <div class="popular-tags__item col-12 col-sm-4">
                 <div class="popular-tags__image">
                     <img src="img/popular-tags/popular-tags-2.png" alt="">
                 </div>
-                <div class="popular-tags__category category">Технологии</div>
+                <div class="popular-tags__category category">
+                    <a href="" class="popular-tags__category-link">Технологии</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item">
+            <div class="popular-tags__item col-12 col-sm-4">
                 <div class="popular-tags__image">
                     <img src="img/popular-tags/popular-tags-3.png" alt="">
                 </div>
-                <div class="popular-tags__category category">Экзоплаеты</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">Экзоплаеты</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item">
+            <div class="popular-tags__item col-12 col-sm-4">
                 <div class="popular-tags__image">
                     <img src="img/popular-tags/popular-tags-4.png" alt="">
                 </div>
-                <div class="popular-tags__category category">Звезды</div>
+                <div class="popular-tags__category category">
+                    <a href="" class="popular-tags__category-link">Звезды</a>
+                </div>
             </div>
         </div>
         <div class="popular-tags__all-tags more">
-            Все теги
+            <a href="">Все теги</a>
         </div>
     </div>
 </section>
@@ -171,8 +220,8 @@
             </div>
         </div>
 
-        <div class="most-talked__list most-talked__slider">
-            <div class="most-talked__item">
+        <div class="most-talked__list row most-talked__slider">
+            <div class="most-talked__item col-12 col-md-8">
                 <div class="most-talked__image">
                     <img src="img/most-talked/most-talked-1.png" alt="">
                 </div>
@@ -182,7 +231,7 @@
                         <span class="most-talked__date date">27.06.2020</span>
                     </div>
                     <div class="most-talked__title title">
-                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                        <a href="#" class="most-talked__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                     </div>
                     <div class="author most-talked__author">
                         Николай Хижняк
@@ -190,7 +239,7 @@
                 </div>
             </div>
 
-            <div class="most-talked__item">
+            <div class="most-talked__item col-12 col-sm-6 col-md-4">
                 <div class="most-talked__image">
                     <img src="img/most-talked/most-talked-2.png" alt="">
                 </div>
@@ -200,7 +249,7 @@
                         <span class="most-talked__date date">27.06.2020</span>
                     </div>
                     <div class="most-talked__title title">
-                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                        <a href="#" class="most-talked__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                     </div>
                     <div class="author most-talked__author">
                         Николай Хижняк
@@ -208,7 +257,7 @@
                 </div>
             </div>
 
-            <div class="most-talked__item">
+            <div class="most-talked__item col-12 col-sm-6 col-md-4">
                 <div class="most-talked__image">
                     <img src="img/most-talked/most-talked-3.png" alt="">
                 </div>
@@ -218,7 +267,7 @@
                         <span class="most-talked__date date">27.06.2020</span>
                     </div>
                     <div class="most-talked__title title">
-                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                        <a href="#" class="most-talked__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                     </div>
                     <div class="author most-talked__author">
                         Николай Хижняк
@@ -226,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="most-talked__item">
+            <div class="most-talked__item col-12 col-sm-6 col-md-4">
                 <div class="most-talked__image">
                     <img src="img/most-talked/most-talked-4.png" alt="">
                 </div>
@@ -236,7 +285,7 @@
                         <span class="most-talked__date date">27.06.2020</span>
                     </div>
                     <div class="most-talked__title title">
-                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                        <a href="#" class="most-talked__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                     </div>
                     <div class="author most-talked__author">
                         Николай Хижняк
@@ -244,7 +293,7 @@
                 </div>
             </div>
 
-            <div class="most-talked__item">
+            <div class="most-talked__item col-12 col-sm-6 col-md-4">
                 <div class="most-talked__image">
                     <img src="img/most-talked/most-talked-5.png" alt="">
                 </div>
@@ -254,7 +303,7 @@
                         <span class="most-talked__date date">27.06.2020</span>
                     </div>
                     <div class="most-talked__title title">
-                        Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе
+                        <a href="#" class="most-talked__title-link">Предложено еще одно объяснение тому, почему мы не нашли разумную жизнь в космосе</a>
                     </div>
                     <div class="author most-talked__author">
                         Николай Хижняк
@@ -267,8 +316,9 @@
 
 <section class="interesting">
     <div class="custom-container">
-        <div class="interesting__list interesting__list-slider">
-            <div class="interesting__item">
+        <div class="interesting__list row interesting__list-slider">
+
+            <div class="interesting__item col-12">
                 <div class="interesting__image">
                     <img src="img/interesting/interesting-1.png" alt="">
                 </div>
@@ -280,7 +330,7 @@
                         27.06.2020
                     </div>
                     <div class="interesting__title title">
-                        Как работает ионный двигатель и где он применяется
+                        <a href="#" class="interesting__title-link">Как работает ионный двигатель и где он применяется</a>
                     </div>
                     <div class="interesting__author author">
                         Артем Сутягин
@@ -296,7 +346,7 @@
                         двигатели уже существуют и даже применяются.
                     </div>
                     <div class="interesting__more more">
-                        Читать далее
+                        <a href="">Читать далее</a>
                     </div>
                 </div>
             </div>
@@ -344,8 +394,8 @@
                 Популярные статьи
             </div>
         </div>
-        <div class="last-articles__list popular-articles__slider">
-            <div class="last-articles__item popular-articles__item">
+        <div class="last-articles__list row popular-articles__slider">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-1.png" alt="">
                 </div>
@@ -354,8 +404,8 @@
                         Это интересно
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -363,7 +413,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item popular-articles__item">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-2.png" alt="">
                 </div>
@@ -372,8 +422,8 @@
                         Это интересно
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Скафандр SpaceX был создан голливудским дизайнером
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Скафандр SpaceX был создан голливудским дизайнером</a>
                     </div>
                     <div class="author last-articles__author">
                         Артем Сутягин
@@ -381,7 +431,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item popular-articles__item">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-3.png" alt="">
                 </div>
@@ -390,8 +440,8 @@
                         Исследования
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Астрономы впервые увидели рождение планеты рядом с молодой звездой
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Астрономы впервые увидели рождение планеты рядом с молодой звездой</a>
                     </div>
                     <div class="author last-articles__author">
                         Александр Богданов
@@ -399,7 +449,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item popular-articles__item">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-4.png" alt="">
                 </div>
@@ -408,8 +458,8 @@
                         Это интересно
                         <span class="last-articles__date date">01.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Не только космические. Какие еще бывают скафандры
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Не только космические. Какие еще бывают скафандры</a>
                     </div>
                     <div class="author last-articles__author">
                         Артем Сутягин
@@ -417,7 +467,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item popular-articles__item">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-5.png" alt="">
                 </div>
@@ -426,8 +476,8 @@
                         Исследования
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Астрономам удалось увидеть гибель другой звёздной системы
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Астрономам удалось увидеть гибель другой звёздной системы</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -435,7 +485,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item popular-articles__item">
+            <div class="last-articles__item popular-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/popular-articles/popular-articles-6.png" alt="">
                 </div>
@@ -444,8 +494,8 @@
                         Технологии
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
-                    <div class="last-articles__title title">
-                        Что такое Южно-Атлантическая магнитная аномалия и почему это опасно для всех
+                    <div class="last-articles__title popular-articles__title title">
+                        <a href="" class="last-articles__title-link">Что такое Южно-Атлантическая магнитная аномалия и почему это опасно для всех</a>
                     </div>
                     <div class="author last-articles__author">
                         Артем Сутягин
@@ -459,33 +509,55 @@
 <section class="popular-tags popular-tags__second">
     <div class="little-container">
 
-        <div class="popular-tags__list popular-tags__slider">
-            <div class="popular-tags__item popular-tags__item-circle">
-                <div class="popular-tags__image popular-tags__image-circle">
-                    <img src="img/popular-tags/popular-tags-circle-1.png" alt="">
+        <div class="popular-tags__list row popular-tags__slider">
+
+            <div class="popular-tags__item-circle col-12 col-sm-4">
+                <div class="popular-tags__image-circle">
+                    <img src="img/others/elipse.png" alt="" class="black__circle">
+                    <div class="popular-tags__body-circle">
+                        <img src="img/popular-tags/popular-tags-circle-1.png" alt="">
+
+                    </div>
                 </div>
-                <div class="popular-tags__category category">Tesla</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">Tesla</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item popular-tags__item-circle">
-                <div class="popular-tags__image popular-tags__image-circle">
-                    <img src="img/popular-tags/popular-tags-circle-2.png" alt="">
+            <div class="popular-tags__item-circle col-12 col-sm-4">
+                <div class="popular-tags__image-circle">
+                    <img src="img/others/elipse.png" alt="" class="black__circle">
+                    <div class="popular-tags__body-circle">
+                        <img src="img/popular-tags/popular-tags-circle-2.png" alt="">
+                    </div>
                 </div>
-                <div class="popular-tags__category category">SpaceX</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">SpaceX</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item popular-tags__item-circle">
-                <div class="popular-tags__image popular-tags__image-circle">
-                    <img src="img/popular-tags/popular-tags-circle-3.png" alt="">
+            <div class="popular-tags__item-circle col-12 col-sm-4">
+                <div class="popular-tags__image-circle">
+                    <img src="img/others/elipse.png" alt="" class="black__circle">
+                    <div class="popular-tags__body-circle">
+                        <img src="img/popular-tags/popular-tags-circle-3.png" alt="">
+                    </div>
                 </div>
-                <div class="popular-tags__category category">Nasa</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">Nasa</a>
+                </div>
             </div>
 
-            <div class="popular-tags__item popular-tags__item-circle">
-                <div class="popular-tags__image popular-tags__image-circle">
-                    <img src="img/popular-tags/popular-tags-circle-4.png" alt="">
+            <div class="popular-tags__item-circle col-12 col-sm-4">
+                <div class="popular-tags__image-circle">
+                    <img src="img/others/elipse.png" alt="" class="black__circle">
+                    <div class="popular-tags__body-circle">
+                        <img src="img/popular-tags/popular-tags-circle-4.png" alt="">
+                    </div>
                 </div>
-                <div class="popular-tags__category category">Роскосмос</div>
+                <div class="popular-tags__category category">
+                    <a href="#" class="popular-tags__category-link">Роскосмос</a>
+                </div>
             </div>
         </div>
     </div>
@@ -499,8 +571,8 @@
                 Все статьи
             </div>
         </div>
-        <div class="last-articles__list">
-            <div class="last-articles__item all-articles__item">
+        <div class="last-articles__list row">
+            <div class="last-articles__item all-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-1.png" alt="">
                 </div>
@@ -510,7 +582,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -518,7 +590,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-2.png" alt="">
                 </div>
@@ -528,7 +600,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -536,7 +608,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-3.png" alt="">
                 </div>
@@ -546,7 +618,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -554,7 +626,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-4.png" alt="">
                 </div>
@@ -564,7 +636,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -572,7 +644,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-5.png" alt="">
                 </div>
@@ -582,7 +654,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -590,7 +662,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-6.png" alt="">
                 </div>
@@ -600,7 +672,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -608,7 +680,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-7.png" alt="">
                 </div>
@@ -618,7 +690,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -626,7 +698,7 @@
                 </div>
             </div>
 
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-8.png" alt="">
                 </div>
@@ -636,14 +708,14 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
                     </div>
                 </div>
             </div>
-            <div class="last-articles__item last-articles__item">
+            <div class="last-articles__item last-articles__item col-12 col-md-4 col-sm-6">
                 <div class="last-articles__image">
                     <img src="img/all-articles/all-articles-9.png" alt="">
                 </div>
@@ -653,7 +725,7 @@
                         <span class="last-articles__date date">27.06.2020</span>
                     </div>
                     <div class="last-articles__title title">
-                        Пять веков Вселенной: в каком мы живем и что это значит?
+                        <a href="#" class="last-articles__title-link">Пять веков Вселенной: в каком мы живем и что это значит?</a>
                     </div>
                     <div class="author last-articles__author">
                         Любовь Соковикова
@@ -663,16 +735,16 @@
         </div>
 
         <div class="all-articles__more more">
-            Загрузить еще
+            <a href="">Загрузить еще</a>
         </div>
         <div class="all-articles__pagination">
             <ul class="pagination__list">
-                <li class="pagination__item">1</li>
-                <li class="pagination__item">2</li>
-                <li class="pagination__item">3</li>
-                <li class="pagination__item">4</li>
+                <li class="pagination__item"><a href="">1</a></li>
+                <li class="pagination__item"><a href="">2</a></li>
+                <li class="pagination__item"><a href="">3</a></li>
+                <li class="pagination__item"><a href="">4</a></li>
                 <li class="pagination__item">...</li>
-                <li class="pagination__item">16</li>
+                <li class="pagination__item"><a href="">16</a></li>
             </ul>
         </div>
     </div>
@@ -723,19 +795,41 @@
         </nav>
         <div class="footer__social">
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-instagram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6689 0H4.33105C1.94287 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.94287 16 4.33105 16H11.669C14.0571 16 16 14.0571 16 11.669V4.33105C16 1.94287 14.0571 0 11.6689 0V0ZM7.99998 12.3749C5.58764 12.3749 3.62512 10.4123 3.62512 7.99998C3.62512 5.58764 5.58764 3.62512 7.99998 3.62512C10.4123 3.62512 12.3749 5.58764 12.3749 7.99998C12.3749 10.4123 10.4123 12.3749 7.99998 12.3749ZM12.4795 4.65685C11.7666 4.65685 11.1867 4.07702 11.1867 3.36413C11.1867 2.65124 11.7666 2.07129 12.4795 2.07129C13.1924 2.07129 13.7723 2.65124 13.7723 3.36413C13.7723 4.07702 13.1924 4.65685 12.4795 4.65685Z" fill="black"/>
+                        <path d="M8.00012 4.56299C6.1051 4.56299 4.56323 6.10473 4.56323 7.99987C4.56323 9.89489 6.1051 11.4368 8.00012 11.4368C9.89525 11.4368 11.437 9.89489 11.437 7.99987C11.437 6.10473 9.89525 4.56299 8.00012 4.56299Z" fill="black"/>
+                        <path d="M12.4795 3.00952C12.2839 3.00952 12.1248 3.1687 12.1248 3.36426C12.1248 3.55981 12.2839 3.71899 12.4795 3.71899C12.6752 3.71899 12.8343 3.55994 12.8343 3.36426C12.8343 3.16858 12.6752 3.00952 12.4795 3.00952Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-telegram.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.90746 9.66851L6.61627 13.7644C7.03289 13.7644 7.21333 13.5854 7.42971 13.3705L9.38301 11.5037L13.4304 14.4678C14.1727 14.8815 14.6957 14.6636 14.896 13.7849L17.5527 1.33599L17.5534 1.33526C17.7889 0.23795 17.1566 -0.191145 16.4334 0.078048L0.817245 6.05678C-0.248525 6.47047 -0.232388 7.0646 0.636072 7.33379L4.62849 8.5756L13.9021 2.77291C14.3385 2.48392 14.7353 2.64382 14.4089 2.93282L6.90746 9.66851Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-vk.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.2041 6.69191C16.8807 6.28346 16.9732 6.10174 17.2041 5.73664C17.2083 5.73247 19.8782 2.04308 20.1533 0.791893L20.1549 0.791059C20.2916 0.335096 20.1549 0 19.4939 0H17.3066C16.7498 0 16.4931 0.287582 16.3555 0.609341C16.3555 0.609341 15.2419 3.2751 13.6664 5.0031C13.1579 5.5024 12.9229 5.66245 12.6453 5.66245C12.5086 5.66245 12.296 5.50241 12.296 5.04644V0.791059C12.296 0.244236 12.1401 0 11.6792 0H8.23986C7.8906 0 7.68304 0.255073 7.68304 0.492641C7.68304 1.01112 8.47076 1.13032 8.55245 2.58907V5.75414C8.55245 6.44767 8.42658 6.57521 8.14734 6.57521C7.40379 6.57521 5.59911 3.89861 4.52964 0.835238C4.31374 0.240902 4.10285 0.000833511 3.54186 0.000833511H1.35373C0.729385 0.000833511 0.603516 0.288416 0.603516 0.610174C0.603516 1.17867 1.34706 4.00531 4.06117 7.73971C5.87002 10.2888 8.41742 11.67 10.7347 11.67C12.1276 11.67 12.2977 11.3632 12.2977 10.8356C12.2977 8.3999 12.1718 8.16983 12.8695 8.16983C13.1929 8.16983 13.7498 8.32988 15.0501 9.5594C16.5364 11.0173 16.7806 11.67 17.6125 11.67H19.7998C20.4233 11.67 20.7393 11.3632 20.5576 10.7581C20.1416 9.48521 17.3308 6.86696 17.2041 6.69191Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-twitter.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.3458 3.55373C17.059 3.04731 17.659 2.41519 18.1478 1.68735V1.68662C17.4953 1.97235 16.801 2.16235 16.0761 2.25442C16.8215 1.80938 17.3908 1.11004 17.6582 0.267461C16.9633 0.681808 16.1959 0.974115 15.3782 1.13781C14.7183 0.434808 13.7778 0 12.7518 0C10.7612 0 9.15864 1.61573 9.15864 3.59612C9.15864 3.88112 9.18276 4.15515 9.24195 4.41604C6.2531 4.26988 3.60772 2.83758 1.83049 0.654769C1.52064 1.19335 1.33795 1.80938 1.33795 2.47219C1.33795 3.71742 1.97884 4.82088 2.93541 5.46031C2.35737 5.44935 1.79103 5.28127 1.31091 5.01746V5.05692C1.31091 6.80419 2.55687 8.2555 4.19161 8.59019C3.89857 8.67058 3.57995 8.70858 3.24891 8.70858C3.01872 8.70858 2.78634 8.69542 2.56857 8.64719C3.03407 10.0707 4.35676 11.1179 5.92791 11.1523C4.70461 12.1088 3.15099 12.6854 1.46949 12.6854C1.17499 12.6854 0.892183 12.6723 0.609375 12.6365C2.20245 13.6632 4.0893 14.25 6.12522 14.25C12.4705 14.25 16.6059 8.95631 16.3458 3.55373Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
             <div class="footer__image">
-                <a href="#" class="footer__social-link"><img src="img/footer/footer-facebook.svg" alt=""></a>
+                <a href="#" class="footer__social-link">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.83594 5.15625V3.28125C4.83594 2.76375 5.25594 2.34375 5.77344 2.34375H6.71094V0H4.83594C3.2825 0 2.02344 1.25906 2.02344 2.8125V5.15625H0.148438V7.5H2.02344V15H4.83594V7.5H6.71094L7.64844 5.15625H4.83594Z" fill="black"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -744,6 +838,7 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/config-slider.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

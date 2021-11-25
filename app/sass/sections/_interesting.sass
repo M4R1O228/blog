@@ -1,19 +1,27 @@
 .interesting
   margin-top: 50px
+  margin-bottom: 100px
   background-color: #030301
   color: #fff
 
   &__item
-    min-height: 600px
+    //min-height: 600px
     position: relative
+    overflow: hidden
 
   &__information
     position: absolute
     top: 120px
     margin-left: 180px
 
-  &__image img
-    margin-left: 600px
+  &__image
+    width: 900px
+    height: 600px
+    margin-left: 870px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
   &__title
     font-size: 24px
@@ -21,6 +29,11 @@
     max-width: 500px
     margin-bottom: 20px
     padding-bottom: 0
+
+    & a
+      color: #fff
+      &:hover
+        color: #aca494
 
   &__category
     display: inline-block
@@ -50,6 +63,11 @@
     line-height: 17px
     max-width: 110px
 
+    & a
+      color: #fff
+      &:hover
+        color: #aca494
+
   &__list
     position: relative
 
@@ -66,13 +84,7 @@
 @media only screen and (max-width: 1199px)
   .interesting
 
-    & .custom-container
-      padding: 0
-
-    &__item
-      overflow: hidden
-
-    &__image img
+    &__image
       margin-left: 515px
 
     &__information
@@ -85,13 +97,12 @@
       left: 98px
 
 @media only screen and (max-width: 991px)
-
   .interesting
 
     &__information
       margin-left: 50px
 
-    &__image img
+    &__image
       margin-left: 515px
 
 @media only screen and (max-width: 767px)
@@ -101,7 +112,7 @@
       margin-left: 25px
       top: 170px
 
-    &__image img
+    &__image
       margin-left: 65px
 
     &__text
@@ -126,7 +137,7 @@
       margin-left: 10px
       top: 70px
 
-    &__image img
+    &__image
       margin-left: -128px
       max-height: 500px
 

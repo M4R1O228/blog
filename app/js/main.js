@@ -1,13 +1,15 @@
 //**меню на мобильных устройствах
 let loginBtn = document.querySelector('.login__button');
-let login = document.querySelector('.login__list');
+let loginList = document.querySelector('.login__list');
+let login = document.querySelector('.login');
 
 loginBtn.addEventListener('click', (event) =>{
-	event.preventDefault();
-	login.classList.toggle('active');
+	loginList.classList.toggle('active');
 	loginBtn.classList.toggle('active');
+	event.preventDefault();
 });
 //**
+
 
 
 

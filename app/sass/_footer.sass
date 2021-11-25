@@ -1,105 +1,107 @@
 .footer
-	margin-top: 100px
-	padding-bottom: 70px
-	& .little-container
-		border-top: 1px solid
+  padding-bottom: 70px
 
-	&__logo
-		margin: 60px auto 60px auto
-		width: 70px
+  & .little-container
+    border-top: 1px solid
 
-	&__logo_second
-		display: block
-		margin-top: -9px
+  &__logo
+    margin: 60px auto 60px auto
+    width: 70px
 
-	&__menu
-		margin-bottom: 50px
+  &__logo_second
+    display: block
+    margin-top: -9px
 
-		&-items
-			display: flex
-			justify-content: center
+  &__menu
+    margin-bottom: 50px
 
-		&-list
-			display: flex
-			justify-content: center
+    &-items
+      display: flex
+      justify-content: center
 
-		&-list:nth-child(2)
-			margin-left: 40px
+    &-list
+      display: flex
+      justify-content: center
 
-		&-item a
-			font-size: 12px
-			line-height: 15px
-			letter-spacing: 0.01em
-			color: #000
+    &-list:nth-child(2)
+      margin-left: 40px
 
-		&-item + .footer__menu-item
-			margin-left: 40px
+    &-item a
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.01em
+      color: #000
 
-	&__social
-		display: flex
-		justify-content: center
+    &-item + .footer__menu-item
+      margin-left: 40px
 
-	&__image + .footer__image
-		margin-left: 40px
+  &__social
+    display: flex
+    justify-content: center
+
+  &__image + .footer__image
+    margin-left: 40px
 
 
 @media only screen and (max-width: 1199px)
-	.footer
+  .footer
 
-		& .little-container
-			max-width: 1180px
+    & .little-container
+      max-width: 1180px
+
 @media only screen and (max-width: 991px)
-	.footer
-		& .little-container
-			max-width: 971px
-	
+  .footer
+    & .little-container
+      max-width: 971px
+
 @media only screen and (max-width: 767px)
-	.footer
-		margin-top: 80px
-		padding-bottom: 60px
+  .footer
+    margin-top: 80px
+    padding-bottom: 60px
 
-		& .little-container
-			max-width: 747px
+    & .little-container
+      max-width: 747px
 
-		&__logo
-			margin: 45px auto 45px auto
+    &__logo
+      margin: 45px auto 45px auto
 
-		&__menu
+    &__menu
 
-			&-items
-				justify-content: space-around
+      &-items
+        justify-content: space-around
 
-			&-list
-				flex-direction: column
-			&-list:nth-child(2)
-				justify-content: start
+      &-list
+        flex-direction: column
 
-			&-item + .footer__menu-item
-				margin-left: 0
+      &-list:nth-child(2)
+        justify-content: start
 
+      &-item + .footer__menu-item
+        margin-left: 0
 
 
 @media only screen and (max-width: 575px)
-	.footer
-		margin-top: 60px
-		& .little-container
-			max-width: 555px
+  .footer
+    margin-top: 60px
+
+    & .little-container
+      max-width: 555px
 
 @media only screen and (max-width: 320px)
-	.footer
-		margin-top: 100px
-		margin-bottom: 50px
+  .footer
+    margin-top: 50px
+    margin-bottom: 50px
 
-		& .little-container
-			max-width: 300px
-			padding: 0
+    & .little-container
+      max-width: 300px
+      padding: 0
 
-		&__logo
-			margin: 20px auto 30px auto
+    &__logo
+      margin: 20px auto 30px auto
 
-		&__menu-items
-			justify-content: space-between
+    &__menu-items
+      justify-content: space-between
 
-		&__menu-list:nth-child(2)
-			margin-left: 0
-			margin-right: 50px
+    &__menu-list:nth-child(2)
+      margin-left: 0
+      margin-right: 50px

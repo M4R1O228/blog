@@ -17,18 +17,24 @@
     padding-top: 67px
     margin-right: 200px
 
+    &_second
+      display: none
+
   &__list
     display: flex
     justify-content: center
     margin-top: 60px
     padding-bottom: 70px
 
-  &__item + .popular-video__item
-    margin-left: 15px
-
   &__image
-    border-radius: 50%
+    width: 100%
     position: relative
+
+    & img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      border-radius: 50%
 
   &__image::before
     content: ''
@@ -48,6 +54,11 @@
     text-align: center
     letter-spacing: 0.01em
     max-width: 390px
+
+    & a
+      color: #fff
+      &:hover
+        color: #aca494
 
   &__data
     display: flex
@@ -79,25 +90,21 @@
     height: 13px
     position: absolute
     left: -22px
-    top: 1px
+    top: 0
     background-image: url("../../img/others/others-comments-white.svg")
 
 @media only screen and (max-width: 1199px)
   .popular-video__link
     margin-right: 35px
 
-  .popular-video__image img
-    max-width: 350px
-
-  .popular-video__item
-    max-width: 350px
-
 @media only screen and (max-width: 991px)
-  .popular-video__image img
-    max-width: 310px
+  .popular-video
 
-  .popular-video__item
-    max-width: 310px
+    &__views
+      margin-left: 30px
+
+    &__comments
+      margin-left: 35px
 
 
 @media only screen and (max-width: 767px)
@@ -108,16 +115,6 @@
     &__logo
       display: none
 
-    &__list
-      justify-content: center
-
-    &__image img
-      max-width: 710px
-      margin: 0 auto
-
-    &__item
-      max-width: 767px
-
     &__name
       margin-left: auto
       margin-right: auto
@@ -127,12 +124,21 @@
 
 @media only screen and (max-width: 575px)
   .popular-video
+    padding-bottom: 50px
 
     &__title
       padding-top: 20px
 
     &__link
       padding-top: 0
+
+      &_first
+        display: none
+
+      &_second
+        display: flex
+        justify-content: center
+        align-items: center
 
     &__list
       padding-bottom: 40px
@@ -152,17 +158,6 @@
     &__name
       font-size: 14px
       line-height: 17px
-
-    &__header
-      position: relative
-
-    &__link
-      position: absolute
-      top: 500px
-      right: 67px
-
-    &__image img
-      max-width: 250px
 
     &__list
       padding-bottom: 115px

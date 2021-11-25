@@ -27,7 +27,7 @@ $('.popular-tags__slider').slick({
     infinite: false,
     responsive: [
         {
-            breakpoint: 576,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
                 mobileFirst: true
@@ -53,38 +53,27 @@ $('.interesting__list-slider').slick({
 
 function slickify(){
     $('.main-news__slider').slick({
-        arrows: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
+        mobileFirst: true,
         responsive: [
             {
-                breakpoint: 2200,
-                settings: "unslick"
-            },
-            {
                 breakpoint: 992,
-                settings: {
-                    arrows: true,
-                    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
-                    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
-                    mobileFirst: true
-                }
+                settings:'unslick'
             }
         ]
     });
     $('.popular-video__slider').slick({
         arrows: false,
+        mobileFirst: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 2200,
-                settings: "unslick"
-            },
-            {
                 breakpoint: 768,
-                settings: {
-                    mobileFirst: true,
-                    infinite: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
+                settings: "unslick"
             }
         ]
     });
@@ -92,51 +81,38 @@ function slickify(){
 slickify();
 function mostTalkedSlider() {
     $('.most-talked__slider').slick({
-        arrows: false,
+        mobileFirst: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 2200,
-                settings: "unslick"
-            },
-            {
                 breakpoint: 576,
-                settings: {
-                    mobileFirst: true,
-                    infinite: false,
-                    arrows: true,
-                    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
-                    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
+                settings: 'unslick'
             }
         ]
     });
     $('.popular-articles__slider').slick({
-        arrows: false,
+        mobileFirst: true,
+        infinite: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
+        slidesToShow: 1,
+        slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 2200,
-                settings: "unslick"
-            },
-            {
                 breakpoint: 576,
-                settings: {
-                    mobileFirst: true,
-                    infinite: false,
-                    arrows: true,
-                    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../img/main-news/arrow-prev.svg" alt=""></button>',
-                    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../img/main-news/arrow-next.svg" alt=""></button>',
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
+                settings: "unslick"
             }
         ]
     });
 }
 mostTalkedSlider();
 $(window).resize(function(){
-    location.reload();
     if (window.innerWidth >= 992) {
         slickify();
     }

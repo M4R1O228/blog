@@ -7,8 +7,7 @@
     position: relative
 
   &-interesting
-    margin-top: 70px
-    margin-bottom: 70px
+    margin: 70px 0 70px 0
     font-weight: 600
     font-size: 23px
     line-height: 28px
@@ -22,22 +21,23 @@
     font-weight: 600
     font-size: 31px
     line-height: 37px
-    margin-top: 70px
-    margin-bottom: 15px
+    margin: 70px 0 15px 0
 
   &__image
-    margin-top: 50px
-    margin-bottom: 50px
+    max-width: 800px
+    height: 500px
+
+    &-body
+      padding-bottom: 50px
 
     & img
-      max-width: 800px
-      max-height: 500px
+      width: 100%
+      height: 100%
+      object-fit: cover
 
     &-under
       margin-top: 10px
       font-weight: 600
-      font-size: 23px
-      line-height: 124.35%
 
       & span
         display: block
@@ -46,12 +46,14 @@
         font-weight: normal
 
   &__image_little
-    display: flex
-    justify-content: space-between
+    margin: 50px 0 50px 0
+    max-width: 100%
+    height: 400px
 
     & img
-      max-width: 390px
-      max-height: 400px
+      width: 100%
+      height: 100%
+      object-fit: cover
 
   &__phrase
     margin: 70px 0 70px 0
@@ -119,6 +121,11 @@
       margin-right: 30px
       margin-bottom: 15px
 
+      & a
+        color: #FD561F
+        &:hover
+          color: #aca494
+
   &-share
     font-family: ProstoOne
     color: #848484
@@ -149,7 +156,7 @@
     &__image:nth-child(2)
       margin-left: 5px
 
-    &__save img
+    &__save-link
       margin-right: 25px
 
   &-share-bottom
@@ -176,11 +183,18 @@
       display: block
 
 @media only screen and  (max-width: 991px)
+  .description
+
+    &__image
+      height: 400px
 
 @media only screen and (max-width: 767px)
 
   .description
     font-size: 16px
+
+    &__image_little
+      padding: 0 70px
 
     & .article-container
       padding: 0
@@ -197,11 +211,9 @@
     &__image-under
       padding-left: 10px
 
-    &__image img
-      max-width: 767px
+    &__image
+      height: 300px
 
-    &__image_little img
-      max-width: 378px
 
     &__question
       max-width: 747px
@@ -212,11 +224,12 @@
 @media only screen and (max-width: 575px)
   .description
 
-    &__image img
-      max-width: 575px
+    &__image
+      height: 200px
 
-    &__image_little img
-      max-width: 280px
+      &_little
+        height: 200px
+        //padding: 0 150px
 
     &__question
       max-width: 555px
@@ -259,18 +272,8 @@
       & span
         font-size: 14px
 
-    &__image img
-      max-width: 320px
 
     &__image_little
-      flex-wrap: wrap
-      align-items: center
-      justify-content: center
-
-    &__image_little img
-      max-width: 195px
-      min-height: 200px
-      max-height: 200px
       margin-bottom: 10px
 
     &__category-items
